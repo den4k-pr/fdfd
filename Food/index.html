@@ -1,0 +1,927 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Summer Body Fit · Nutrition Portal</title>
+<meta name="theme-color" content="#04110a">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Summer Body Fit">
+<link rel="apple-touch-icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 180 180'%3E%3Crect width='180' height='180' rx='40' fill='%2304110a'/%3E%3Cpath d='M90 38c14 14 21 31 21 49a21 21 0 0 1-42 0c0-7 2-14 6-21 3 8 8 12 13 13-4-12-2-27 2-41z' fill='%238fe85b'/%3E%3C/svg%3E">
+<script>(function(){var t;try{t=localStorage.getItem('sbf-theme');}catch(e){}if(t!=='light'&&t!=='dark')t='light';document.documentElement.setAttribute('data-theme',t);})();</script>
+<link rel="stylesheet" href="./style.css?v=10">
+<style>
+.today-grid{
+    grid-template-columns: 1fr 1fr;
+    margin: 24px 0;
+    }
+@media(max-width: 500px){
+    
+    .navin{
+        display: none !important;
+    }
+    
+    .today-grid{
+    grid-template-columns: 1fr;
+    gap: 18px;
+    
+    }
+}
+    .nav-logout-btn {
+    background: rgba(255, 255, 255, .08);
+    border: 1px solid rgba(255, 255, 255, .15);
+    border-radius: 8px;
+    padding: 7px 14px;
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+    color: #ccc;
+    cursor: pointer;
+    transition: background .15s;
+}
+  .nav-logout-btn:hover { background: rgba(255, 94, 94, 0.1); border-color: #ff5e5e; transform: translateY(-1px); }
+</style>
+</head>
+<body>
+<div class="bgfx"></div>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<!-- frontend-craft showcase tier: monochrome liquid-glass tiles.
+     Inline this sprite in the page, then set color with ONE css token.
+     :root { (icon-tint): #3E4756 }  graphite default.
+     Write the token with two leading dashes before "icon-tint".
+     Brand swaps: Beauty Shock #2E6BE6 / Zubalenok #1F9D57 (ZBL green) / ink #1F2530.
+     Use:  (svg class="gx")(use href="#gx-laser")  with real angle brackets.
+     IDs: gx-laser, gx-endo, gx-glow, gx-zone, gx-trust, gx-burn, gx-pulse, gx-range, gx-power, gx-star, gx-secure, gx-flex -->
+<defs>
+  <clipPath id="gx-clip"><rect x="8.0" y="8.0" width="64" height="64" rx="18"/></clipPath>
+  <linearGradient id="gx-spec" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#fff" stop-opacity=".58"/>
+    <stop offset=".42" stop-color="#fff" stop-opacity=".06"/>
+    <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <radialGradient id="gx-corner" cx=".28" cy=".18" r=".8">
+    <stop offset="0" stop-color="#fff" stop-opacity=".5"/>
+    <stop offset=".5" stop-color="#fff" stop-opacity="0"/>
+  </radialGradient>
+  <linearGradient id="gx-botdark" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0" stop-color="#05080f" stop-opacity=".22"/>
+    <stop offset=".45" stop-color="#05080f" stop-opacity="0"/>
+  </linearGradient>
+  <linearGradient id="gx-botglow" x1="0" y1="1" x2="0" y2="0">
+    <stop offset="0" stop-color="#fff" stop-opacity=".14"/>
+    <stop offset=".35" stop-color="#fff" stop-opacity="0"/>
+  </linearGradient>
+  <filter id="gx-gsh" x="-50%" y="-50%" width="200%" height="200%">
+    <feDropShadow dx="0" dy="1" stdDev="1.1" flood-color="#05080f" flood-opacity=".30"/>
+  </filter>
+</defs>
+  <symbol id="gx-laser" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" fill-opacity=".97" filter="url(#gx-gsh)"><path d="M12 3.2 C12 3.2 5.6 10.6 5.6 15.2 A6.4 6.4 0 0 0 18.4 15.2 C18.4 10.6 12 3.2 12 3.2 Z"/></g></g>
+  </symbol>
+  <symbol id="gx-endo" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" stroke="#fff" stroke-opacity=".98" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" filter="url(#gx-gsh)"><path d="M3.2 13 C5.2 8.8 7.2 8.8 9.2 13 S13.2 17.2 15.2 13 S19.2 8.8 21.2 13" fill="none"/></g></g>
+  </symbol>
+  <symbol id="gx-glow" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" fill-opacity=".97" filter="url(#gx-gsh)"><path d="M12 2.6 C12.6 8.4 15.6 11.4 21.4 12 C15.6 12.6 12.6 15.6 12 21.4 C11.4 15.6 8.4 12.6 2.6 12 C8.4 11.4 11.4 8.4 12 2.6 Z"/></g></g>
+  </symbol>
+  <symbol id="gx-zone" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" stroke="#fff" stroke-opacity=".98" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" filter="url(#gx-gsh)"><circle cx="12" cy="12" r="8.4" fill="none"/><circle cx="12" cy="12" r="3.4" fill="none"/></g></g>
+  </symbol>
+  <symbol id="gx-trust" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" stroke="#fff" stroke-opacity=".98" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" filter="url(#gx-gsh)"><path d="M12 3 L19 6 V11 C19 16 15.4 19.6 12 21 C8.6 19.6 5 16 5 11 V6 Z" fill="none"/><path d="M9 12 L11 14 L15.2 9.4" fill="none"/></g></g>
+  </symbol>
+  <symbol id="gx-burn" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" fill-opacity=".97" filter="url(#gx-gsh)"><path d="M12 2.6 C8.8 7 6.6 9.2 6.6 13.2 A5.4 5.4 0 0 0 17.4 13.2 C17.4 11 16.2 9 15 8 C14.4 10.2 13.4 10.2 12.9 9.1 C12.3 7.4 12.9 4.8 12 2.6 Z"/></g></g>
+  </symbol>
+  <symbol id="gx-pulse" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" stroke="#fff" stroke-opacity=".98" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" filter="url(#gx-gsh)"><path d="M2.8 12 H8 L10 6.8 L14 17.2 L16 12 H21.2" fill="none"/></g></g>
+  </symbol>
+  <symbol id="gx-range" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" stroke="#fff" stroke-opacity=".98" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" filter="url(#gx-gsh)"><path d="M5 18 H19" fill="none"/><path d="M5 18 L16.6 8.4" fill="none"/><path d="M12 18 A7 7 0 0 0 10 13.4" fill="none"/><circle cx="5" cy="18" r="1.4" stroke="none"/></g></g>
+  </symbol>
+  <symbol id="gx-power" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" fill-opacity=".97" filter="url(#gx-gsh)"><path d="M13.2 2.4 L5.4 13.2 H11 L10.4 21.6 L18.6 10.2 H12.6 Z"/></g></g>
+  </symbol>
+  <symbol id="gx-star" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" fill-opacity=".97" filter="url(#gx-gsh)"><path d="M12 2.6 L14.7 9 L21.4 9.5 L16.2 13.9 L17.9 20.4 L12 16.7 L6.1 20.4 L7.8 13.9 L2.6 9.5 L9.3 9 Z"/></g></g>
+  </symbol>
+  <symbol id="gx-secure" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" stroke="#fff" stroke-opacity=".98" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round" filter="url(#gx-gsh)"><rect x="5" y="11" width="14" height="9" rx="2.6" fill="none"/><path d="M8 11 V8 A4 4 0 0 1 16 8 V11" fill="none"/><path d="M12 15 V16.6" fill="none"/></g></g>
+  </symbol>
+  <symbol id="gx-flex" viewBox="0 0 80 80">
+    <rect x="8.0" y="8.0" width="64" height="64" rx="18" fill="var(--icon-tint, #3E4756)"/>
+    <g clip-path="url(#gx-clip)">
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botdark)"/>
+      <rect x="8.0" y="8.0" width="64" height="32.0" fill="url(#gx-spec)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-corner)"/>
+      <rect x="8.0" y="8.0" width="64" height="64" fill="url(#gx-botglow)"/>
+    </g>
+    <rect x="8.6" y="8.6" width="62.8" height="62.8" rx="17.4" fill="none" stroke="#fff" stroke-opacity=".46" stroke-width="1"/>
+    <g transform="translate(20.56,20.56) scale(1.62)"><g fill="#fff" fill-opacity=".97" filter="url(#gx-gsh)"><path d="M19 5 C11 5 5 11 5 19 C13 19 19 13 19 5 Z"/></g></g>
+  </symbol>
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+<!-- AUTH STATUS NAV -->
+<div class="auth-status-container">
+  <div class="user-badge">
+    <div id="user-status-dot" class="dot anon"></div>
+    <span id="user-status-text">Loading profile...</span>
+  </div>
+  <button id="nav-logout-btn" class="nav-logout-btn hide" onclick="handleLogout()">Sign Out</button>
+</div>
+
+<!-- ─── MANDATORY AUTH MODAL ─── -->
+<div id="auth-modal" class="auth-overlay hide">
+  <div class="auth-card">
+
+    <!-- LOGIN VIEW -->
+    <div id="auth-view-login">
+      <h3 class="auth-title">Sign In</h3>
+      <div class="auth-group">
+        <label class="auth-label">Email</label>
+        <input type="email" id="login-email" class="auth-input" placeholder="your@email.com">
+      </div>
+      <div class="auth-group">
+        <label class="auth-label">Password</label>
+        <input type="password" id="login-password" class="auth-input" placeholder="••••••••">
+      </div>
+      <button id="login-submit-btn" class="auth-btn" onclick="submitLogin()">Sign In</button>
+      <div class="auth-switch">
+        Don't have an account? <span class="auth-link" onclick="toggleAuthModal('register')">Sign Up</span>
+      </div>
+      <div class="auth-switch" style="margin-top:12px;">
+        <span class="auth-link" style="color:#666;font-weight:500;" onclick="toggleAuthModal('forgot')">Forgot password?</span>
+      </div>
+    </div>
+
+    <!-- REGISTER VIEW -->
+    <div id="auth-view-register" class="hide">
+      <h3 class="auth-title">Create Account</h3>
+      <p style="font-size:13px;color:#888;text-align:center;margin-top:-10px;margin-bottom:24px;line-height:1.4;">
+        Your current saved data will be automatically transferred to your new account!
+      </p>
+      <div class="auth-group">
+        <label class="auth-label">Email</label>
+        <input type="email" id="register-email" class="auth-input" placeholder="your@email.com">
+      </div>
+      <div class="auth-group">
+        <label class="auth-label">Password (min. 6 characters)</label>
+        <input type="password" id="register-password" class="auth-input" placeholder="••••••••">
+      </div>
+      <button id="register-submit-btn" class="auth-btn" onclick="submitRegister()">Sign Up</button>
+      <div class="auth-switch">
+        Already have an account? <span class="auth-link" onclick="toggleAuthModal('login')">Sign In</span>
+      </div>
+    </div>
+
+    <!-- FORGOT PASSWORD VIEW — КРОК 1: вводимо email -->
+    <div id="auth-view-forgot" class="hide">
+      <h3 class="auth-title">Reset Password</h3>
+      <p style="font-size:13px;color:#888;text-align:center;margin-top:-10px;margin-bottom:24px;line-height:1.4;">
+        Enter your email and we'll send a 6-digit verification code.
+      </p>
+      <div class="auth-group">
+        <label class="auth-label">Your Email</label>
+        <input type="email" id="forgot-email" class="auth-input" placeholder="your@email.com">
+      </div>
+      <button id="forgot-submit-btn" class="auth-btn" onclick="submitForgotPassword()">Send Code</button>
+      <div class="auth-switch">
+        Remembered your password? <span class="auth-link" onclick="toggleAuthModal('login')">Back to Sign In</span>
+      </div>
+    </div>
+
+    <!-- VERIFY CODE VIEW — КРОК 2: вводимо код з листа -->
+    <div id="auth-view-verify" class="hide">
+      <h3 class="auth-title">Enter Code</h3>
+      <p style="font-size:13px;color:#888;text-align:center;margin-top:-10px;margin-bottom:24px;line-height:1.4;">
+        We sent a 6-digit code to<br>
+        <strong id="verify-email-hint" style="color:#5dde7a;"></strong>
+      </p>
+      <div class="auth-group">
+        <label class="auth-label">Verification Code</label>
+        <input
+          type="text"
+          id="verify-code-input"
+          class="auth-input"
+          placeholder="123456"
+          maxlength="6"
+          inputmode="numeric"
+          pattern="\d{6}"
+          style="text-align:center;font-size:24px;letter-spacing:8px;font-weight:700;"
+        >
+      </div>
+      <button id="verify-submit-btn" class="auth-btn" onclick="submitVerifyCode()">Verify Code</button>
+      <div class="auth-switch">
+        Didn't receive it? <span class="auth-link" onclick="toggleAuthModal('forgot')">Resend code</span>
+      </div>
+    </div>
+
+    <!-- RESET PASSWORD VIEW — КРОК 3: вводимо новий пароль -->
+    <div id="auth-view-reset" class="hide">
+      <h3 class="auth-title">New Password</h3>
+      <p style="font-size:13px;color:#888;text-align:center;margin-top:-10px;margin-bottom:24px;line-height:1.4;">
+        Almost done! Set your new password below.
+      </p>
+      <div class="auth-group">
+        <label class="auth-label">New Password (min. 6 characters)</label>
+        <input type="password" id="reset-password-field" class="auth-input" placeholder="••••••••">
+      </div>
+      <button id="reset-submit-btn" class="auth-btn" onclick="submitResetPassword()">Update Password</button>
+    </div>
+
+  </div>
+</div>
+
+  <symbol id="i-check" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12.5 L10 17.5 L19 7"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-arrow-right" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M4 12 H19"/>
+      <path d="M13 6 L19 12 L13 18"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-sparkle" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3 C12.5 8 16 11.5 21 12 C16 12.5 12.5 16 12 21 C11.5 16 8 12.5 3 12 C8 11.5 11.5 8 12 3 Z"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-droplet" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3.5 C12 3.5 6 10.5 6 15 A6 6 0 0 0 18 15 C18 10.5 12 3.5 12 3.5 Z"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-wave" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 13 C5 9 7 9 9 13 S13 17 15 13 S19 9 21 13"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-target" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8.5"/>
+      <circle cx="12" cy="12" r="3.5"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-shield-check" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3 L19 6 V11 C19 16 15.5 19.5 12 21 C8.5 19.5 5 16 5 11 V6 Z"/>
+      <path d="M9 12 L11 14 L15 9.5"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-clock" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="8.5"/>
+      <path d="M12 7 V12 L15.5 14"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-flame" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3 C9 7 7 9 7 13 A5 5 0 0 0 17 13 C17 11 16 9 15 8 C14.5 10 13.5 10 13 9 C12.5 7.5 13 5 12 3 Z"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-pulse" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M3 12 H8 L10 7 L14 17 L16 12 H21"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-range" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 18 H19"/>
+      <path d="M5 18 L16.5 8.5"/>
+      <path d="M12 18 A7 7 0 0 0 10 13.5"/>
+      <circle cx="5" cy="18" r="1.3" fill="currentColor" stroke="none"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-star" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M12 3 L14.6 9.1 L21 9.6 L16 13.8 L17.6 20 L12 16.5 L6.4 20 L8 13.8 L3 9.6 L9.4 9.1 Z"/>
+    </g>
+  </symbol>
+
+  <symbol id="i-lock" viewBox="0 0 24 24">
+    <g fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round">
+      <rect x="5" y="11" width="14" height="9" rx="2.5"/>
+      <path d="M8 11 V8 A4 4 0 0 1 16 8 V11"/>
+      <path d="M12 15 V16.5"/>
+    </g>
+  </symbol>
+
+</svg>
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none" aria-hidden="true">
+<defs>
+<g id="_b" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round"></g>
+</defs>
+<symbol id="i-bowl" viewBox="0 0 24 24"><path d="M3 11h18M4 11a8 8 0 0 0 16 0M9 11c0-3 1.5-5 3-5M14 11c0-2 1-3.5 2.5-3.5"/></symbol>
+<symbol id="i-cycle" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13.7-5.6L20 8M20 4v4h-4M20 12a8 8 0 0 1-13.7 5.6L4 16M4 20v-4h4"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M5 4h9a3 3 0 0 1 3 3v13H8a3 3 0 0 0-3 3zM17 7h2v16H8"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h2l2.2 11.5a1.5 1.5 0 0 0 1.5 1.2h8.4a1.5 1.5 0 0 0 1.5-1.2L21 8H6"/><circle cx="9.5" cy="20" r="1.1"/><circle cx="17.5" cy="20" r="1.1"/></symbol>
+<symbol id="i-shuffle" viewBox="0 0 24 24"><path d="M16 4h4v4M20 4l-6 6M4 4l16 16M20 16v4h-4M14 14l6 6M4 20l5-5"/></symbol>
+<symbol id="i-calc" viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M8 7h8M8 11h.01M12 11h.01M16 11h.01M8 15h.01M12 15h.01M16 15v3M8 18h4"/></symbol>
+<symbol id="i-leaf" viewBox="0 0 24 24"><path d="M4 20c0-8 6-14 16-14 0 10-6 16-16 14zM4 20c4-6 7-8 11-9"/></symbol>
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v6M12 15v6M3 12h6M15 12h6M6 6l3 3M15 15l3 3M18 6l-3 3M9 15l-3 3"/></symbol>
+<symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4.2"/><path d="M12 2.5v2.2M12 19.3v2.2M4.5 4.5l1.6 1.6M17.9 17.9l1.6 1.6M2.5 12h2.2M19.3 12h2.2M4.5 19.5l1.6-1.6M17.9 6.1l1.6-1.6"/></symbol>
+<symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.2A8 8 0 1 1 9.8 4 6.3 6.3 0 0 0 20 14.2Z"/></symbol>
+<symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9S14.5 18.5 12 21c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3Z"/></symbol>
+</svg>
+
+
+
+<nav>
+  <div class="wrap">
+    <div class="navrow" style="position:relative;">
+  <div style="display:flex;align-items:center;gap:8px;flex:1;min-width:0;">
+    <!-- бургер — видимий тільки на мобілці -->
+    <button class="znp-burger" id="znpBurger" aria-label="Open navigation" aria-expanded="false">
+      <span class="znp-burger-bar"></span>
+      <span class="znp-burger-bar"></span>
+      <span class="znp-burger-bar"></span>
+    </button>
+    <!-- підпис активного розділу на мобілці -->
+    <span class="znp-active-label" id="znpActiveLabel">Today</span>
+
+    <!-- оригінальний navin — прихований на мобілці -->
+    <div class="navin">
+      <button class="on" data-tab="today"><svg class="i"><use href="#i-spark"/></svg><span data-i18n="nav.today">Today</span></button>
+      <button data-tab="plan"><svg class="i"><use href="#i-bowl"/></svg><span data-i18n="nav.plan">Plan</span></button>
+      <button data-tab="recipes"><svg class="i"><use href="#i-book"/></svg><span data-i18n="nav.meals">Meals</span></button>
+      <button data-tab="proto"><svg class="i"><use href="#i-shield-check"/></svg><span data-i18n="nav.pillars">Pillars</span></button>
+      <button data-tab="cycle"><svg class="i"><use href="#i-cycle"/></svg><span data-i18n="nav.cycle">Cycle</span></button>
+      <button data-tab="lecture"><svg class="i"><use href="#i-leaf"/></svg><span data-i18n="nav.learn">Learn</span></button>
+      <button data-tab="shop"><svg class="i"><use href="#i-cart"/></svg><span data-i18n="nav.shop">Shopping</span></button>
+      <button data-tab="calc"><svg class="i"><use href="#i-calc"/></svg><span data-i18n="nav.calc">Calculator</span></button>
+    </div>
+  </div>
+
+  <!-- мобільний дропдаун — absolute відносно navrow -->
+  <div class="znp-dropdown" id="znpDropdown" role="menu">
+    <button data-tab="today" data-label="Today"><svg class="i"><use href="#i-spark"/></svg>Today</button>
+    <button data-tab="plan" data-label="Plan"><svg class="i"><use href="#i-bowl"/></svg>Plan</button>
+    <button data-tab="recipes" data-label="Meals"><svg class="i"><use href="#i-book"/></svg>Meals</button>
+    <button data-tab="proto" data-label="Pillars"><svg class="i"><use href="#i-shield-check"/></svg>Pillars</button>
+    <button data-tab="cycle" data-label="Cycle"><svg class="i"><use href="#i-cycle"/></svg>Cycle</button>
+    <button data-tab="lecture" data-label="Learn"><svg class="i"><use href="#i-leaf"/></svg>Learn</button>
+    <div class="znp-divider"></div>
+    <button data-tab="shop" data-label="Shopping"><svg class="i"><use href="#i-cart"/></svg>Shopping</button>
+    <button data-tab="calc" data-label="Calculator"><svg class="i"><use href="#i-calc"/></svg>Calculator</button>
+  </div>
+
+  <div class="lang-wrap">
+    <svg class="i lang-globe"><use href="#i-globe"/></svg>
+    <select id="lang-select" aria-label="Language"></select>
+  </div>
+</div>
+  </div>
+</nav>
+
+<header class="hero" id="hero-block">
+  <div class="wrap">
+    <div class="eyebrow" data-i18n="hero.eyebrow">Zubalenok Nutrition Protocol · for Summer Body Fit members</div>
+    <h1><span data-i18n="hero.h1a">Zubalenok Nutrition</span> <span class="gln" data-i18n="hero.h1b">Protocol</span></h1>
+    <p class="ksay" data-i18n="hero.ksay">Your nutrition portal. Eat to your own calories, build a habit that lasts.</p>
+    <p class="lede" data-i18n="hero.lede">Track your days and your water, build a plate plan for your calories, and turn it into a shopping list. The full system, 100 meals, and your daily habit in one place.</p>
+
+    <div class="hero-grid">
+      <div>
+        <div class="hero-meta">
+          <div class="m glass"><b id="stat-meals">100</b><span data-i18n="meals.meals">meals</span></div>
+          <div class="m glass"><b>4</b><span data-i18n="pillars.eyebrow">pillars</span></div>
+          <div class="m glass"><b><em>You</em></b><span data-i18n="calc.you_are">set the calories</span></div>
+        </div>
+        <div style="margin-top:18px"><button class="btn btn-primary" data-jump="today" data-i18n="hero.cta">Open my day</button></div>
+      </div>
+      <div class="kcard glass">
+        <div class="ktop">
+          <div class="kav"><svg class="gx"><use href="#gx-flex"/></svg></div>
+          <div><div class="kname">Karyna Zubalenok</div><div class="krole" data-i18n="calc.eyebrow">Your coach</div></div>
+        </div>
+        <p><span class="kquote">&ldquo;</span> <span data-i18n="hero.kquote">It is a lifestyle you can fit a chocolate, a glass of wine and pasta into, all without the stress.</span></p>
+      </div>
+    </div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <!-- ============ TODAY (home / habit tracker) ============ -->
+  <section class="panel on" id="today">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-i18n="today.eyebrow">Your daily check-in</div>
+      <h2 data-i18n="today.title">Today</h2>
+      <p data-i18n="today.sub">Small, steady days are what change a body. Mark your day and your water, and watch the streak grow.</p>
+    </div>
+    <div id="today-body"></div>
+  </section>
+
+  <!-- ============ PLAN (meal-plan generator) ============ -->
+  <section class="panel" id="plan">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-i18n="plan.eyebrow">Your daily plate</div>
+      <h2 data-i18n="plan.title">Build my day</h2>
+      <p data-i18n="plan.sub">Set your number, pick a focus and any dietary needs, then build a plate plan for the day.</p>
+    </div>
+    <div class="gen glass reveal">
+      <div class="tslider">
+        <div class="thead"><span class="tlab" data-i18n="plan.daily">Daily calories</span><b><span id="t-val">1600</span><small> <span data-i18n="calc.kcal">kcal</span></small></b></div>
+        <input type="range" id="t-range" min="1100" max="3000" step="50" value="1600">
+      </div>
+      <div class="genctrl">
+        <div class="gc">
+          <label data-i18n="plan.snack">Add a snack</label>
+          <div class="toggle" id="g-snack"><span class="sw"></span><span data-i18n="plan.snack_sub">An extra snack, up to ~300 kcal</span></div>
+        </div>
+        <div class="gc" style="flex:1;min-width:200px">
+          <label data-i18n="plan.diet">Dietary needs</label>
+          <div class="chips" id="g-diet"></div>
+        </div>
+      </div>
+      <div class="genbtns" style="margin-bottom:6px">
+        <button class="btn btn-primary" id="g-build" data-i18n="plan.build">Build my day</button>
+        <button class="btn btn-ghost" id="g-shuffle"><svg class="i" style="width:15px;height:15px"><use href="#i-shuffle"/></svg> <span data-i18n="plan.shuffle">Shuffle</span></button>
+        <button class="btn btn-ghost" id="g-toshop"><svg class="i" style="width:15px;height:15px"><use href="#i-cart"/></svg> <span data-i18n="plan.to_shop">Send to shopping list</span></button>
+      </div>
+      <div id="plan-result" style="margin-top:22px"></div>
+    </div>
+  </section>
+
+  <!-- ============ CALCULATOR (used once, lives last) ============ -->
+  <section class="panel" id="calc">
+    <div class="sec-head reveal">
+      <div class="eyebrow" data-i18n="calc.eyebrow">Your starting number</div>
+      <h2 data-i18n="calc.title">Find your daily calories</h2>
+      <p data-i18n="calc.sub">A starting point based on your body and goal. We keep it at a safe minimum, never crash-diet territory.</p>
+    </div>
+    <div class="calc glass reveal">
+      <div>
+        <div class="fieldset">
+          <div class="field">
+            <label data-i18n="calc.you_are">You are</label>
+            <div class="seg" id="seg-sex">
+              <button data-v="female" class="on" data-i18n="calc.woman">Woman</button>
+              <button data-v="male" data-i18n="calc.man">Man</button>
+            </div>
+          </div>
+          <div class="numrow">
+            <div class="field"><label data-i18n="calc.age">Age</label><div class="num"><button data-f="age" data-d="-1">&minus;</button><input id="f-age" type="number" inputmode="numeric" value="30"><button data-f="age" data-d="1">+</button></div></div>
+            <div class="field"><label data-i18n="calc.height">Height, cm</label><div class="num"><button data-f="h" data-d="-1">&minus;</button><input id="f-h" type="number" inputmode="numeric" value="168"><button data-f="h" data-d="1">+</button></div></div>
+            <div class="field"><label data-i18n="calc.weight">Weight, kg</label><div class="num"><button data-f="w" data-d="-1">&minus;</button><input id="f-w" type="number" inputmode="numeric" value="68"><button data-f="w" data-d="1">+</button></div></div>
+          </div>
+          <div class="field">
+            <label data-i18n="calc.activity">Activity</label>
+            <select class="sel" id="f-act">
+              <option value="1.2" data-i18n="calc.act1">Mostly sitting</option>
+              <option value="1.375" data-i18n="calc.act2">Light, 1 to 2 workouts a week</option>
+              <option value="1.55" selected data-i18n="calc.act3">Active, 3 to 4 workouts a week</option>
+              <option value="1.725" data-i18n="calc.act4">Very active, 5 to 6 workouts</option>
+              <option value="1.9" data-i18n="calc.act5">Athlete level</option>
+            </select>
+          </div>
+          <div class="field">
+            <label data-i18n="calc.goal">Goal</label>
+            <div class="seg" id="seg-goal">
+              <button data-v="lose" class="on" data-i18n="calc.lose">Lose fat</button>
+              <button data-v="maintain" data-i18n="calc.maintain">Maintain</button>
+              <button data-v="gain" data-i18n="calc.build">Build</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="calc-out">
+        <div class="olab" data-i18n="calc.target">Your daily target</div>
+        <div class="obig"><span id="out-kcal">0</span> <small data-i18n="calc.kcal">kcal</small></div>
+        <div class="orow">
+          <div class="ochip"><span data-i18n="calc.protein_goal">Protein</span> <b id="out-prot">0 g</b></div>
+          <div class="ochip"><span data-i18n="calc.fat_goal">Fat</span> <b id="out-fat">0 g</b></div>
+          <div class="ochip"><span data-i18n="calc.carb_goal">Carbs</span> <b id="out-carb">0 g</b></div>
+          <div class="ochip"><span data-i18n="calc.maintenance">Maintenance</span> <b id="out-tdee">0</b></div>
+        </div>
+        <div class="onote" id="out-note" data-i18n="calc.note">Kept at a safe minimum to protect your energy and hormones.</div>
+        <p class="omacronote" data-i18n="calc.macro_note">Protein around 2 g per kg, fat around 1 g per kg, and the rest is carbs. Weigh rice, pasta and grains dry.</p>
+        <button class="btn btn-primary obtn" id="use-target" data-i18n="calc.use">Use this target in Plan</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="panel" id="lecture">
+
+    <div class="lec-block approach">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="learn.approach_eyebrow">Karyna's approach</div>
+        <h2 data-i18n="learn.approach_title">Food without the fear</h2>
+      </div>
+      <div class="approach-body">
+        <p data-i18n="phil.p1">.</p>
+        <p data-i18n="phil.p2">.</p>
+        <p class="phil-strong" data-i18n="phil.p3">.</p>
+      </div>
+      <h3 class="approach-sub" data-i18n="phil.s_title">Learning to eat, in three stages</h3>
+      <div class="stage-grid">
+        <div class="stage-card"><h4 data-i18n="phil.s1_t">1. Watch and count</h4><p data-i18n="phil.s1_d">.</p></div>
+        <div class="stage-card"><h4 data-i18n="phil.s2_t">2. Learn your body</h4><p data-i18n="phil.s2_d">.</p></div>
+        <div class="stage-card"><h4 data-i18n="phil.s3_t">3. Live it</h4><p data-i18n="phil.s3_d">.</p></div>
+      </div>
+      <h3 class="approach-sub" data-i18n="phil.rules_t">A few things that make it easy</h3>
+      <ul class="rules-list">
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="phil.r1">.</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="phil.r2">.</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="phil.r3">.</span></li>
+        <li><svg class="i"><use href="#i-check"/></svg><span data-i18n="phil.r4">.</span></li>
+      </ul>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Before we begin</div>
+        <h2>Does this feeling sound familiar?</h2>
+        <p>Many women spend years trying to lose weight: they try different diets, join challenges, cut out whole food groups. Sometimes the weight even drops — and it feels like it finally worked. But after a while, it all comes back.</p>
+      </div>
+      <div class="feel-grid" id="feel-grid"></div>
+      <div class="verdict">But the truth is different. <b>The problem isn't willpower. The problem is the eating system.</b></div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Honest about diets</div>
+        <h2>Why most diets don't work</h2>
+        <p>Diets promise fast results — but rarely explain what happens to your body and mind in the process. Here are the three main reasons they don't deliver lasting effects.</p>
+      </div>
+      <div class="three-grid" id="diet-fail"></div>
+      <div class="key-think"><span>Key idea</span> Your body doesn't respond to diets. It responds to a system.</div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">The full picture</div>
+        <h2>What actually affects your weight</h2>
+        <p>Weight doesn't depend on one food or one decision. A whole system of factors shapes it, and if even one element is off, the body finds it harder to hold balance.</p>
+      </div>
+      <div class="factor-wheel" id="factor-wheel"></div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Recognise yourself?</div>
+        <h2>The most common eating mistakes</h2>
+        <p>Most problems with weight and wellbeing aren't about a lack of discipline — they come from a few common eating mistakes.</p>
+      </div>
+      <div class="mistake-grid" id="mistake-grid"></div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Why nutrient balance matters</div>
+        <h2>Each nutrient has a job</h2>
+        <p>Every nutrient plays a unique role in the body. Together they create a synergy that supports health, energy, and a healthy weight.</p>
+      </div>
+      <div class="mistake-grid" id="nutrient-grid"></div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">One mistake, up close</div>
+        <h2>Not enough protein</h2>
+      </div>
+      <div class="protein-split">
+        <div class="protein-why">
+          <h3>Why protein matters so much</h3>
+          <p>Protein is one of the most important nutrients for managing weight. It keeps you full for longer, protects muscle while you lose weight, and helps hold a steady energy level through the day.</p>
+          <ul id="protein-bullets"></ul>
+        </div>
+        <div class="protein-sources">
+          <h4>Best protein sources</h4>
+          <div class="src-grid" id="protein-src"></div>
+          <p class="src-note">Aim to include a protein source in every meal — it's one of the simplest steps toward balance.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">No calorie counting</div>
+        <h2>The healthy-plate formula</h2>
+        <p>For a meal to be balanced, it needs four main components. If even one is missing, the body gets hungry faster and energy drops. Just picture your plate divided into parts.</p>
+      </div>
+      <div class="plate-split">
+        <div class="plate-visual" id="plate-visual" aria-hidden="true"></div>
+        <div class="plate-parts" id="plate-parts"></div>
+      </div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Build your plate</div>
+        <h2>Pick one from each category</h2>
+        <p>Use this as a cheat sheet to build the perfect meal. Choose one item from each category — and your plate will be balanced and tasty.</p>
+      </div>
+      <div class="builder-grid" id="builder-grid"></div>
+      <div class="algo">💡 <b>Simple algorithm:</b> <span class="seq">½ plate vegetables → ¼ protein → ¼ carbs → + healthy fats.</span></div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">The right combination</div>
+        <h2>Combining well is the key to lasting fullness</h2>
+        <p>It's not any single food — it's how the four parts work together. Build each plate from these and hunger stays away for hours.</p>
+      </div>
+      <div class="combo-grid" id="combo-grid"></div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Portions without a scale</div>
+        <h2>Measure with your hand</h2>
+        <p>No scale, no app. Your hand travels with you and scales to your body — the simplest way to size a balanced plate.</p>
+      </div>
+      <div class="hand-grid" id="hand-grid"></div>
+      <div class="key-think big-idea"><span>Weight-loss tip</span> Trim the carbs a little and add more vegetables — the plate becomes even more effective for losing weight.</div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Practical examples</div>
+        <h2>What a balanced meal looks like</h2>
+        <p>Each of these meals combines all four components of a balanced plate — and stays simple to cook.</p>
+      </div>
+      <div class="example-grid" id="example-grid"></div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">In practice</div>
+        <h2>The eating system</h2>
+        <p>An eating system isn't a diet or a list of bans. It's a way to organise your food so your body gets everything it needs, every day.</p>
+      </div>
+      <div class="three-grid" id="system-flow" style="grid-template-columns:repeat(3,1fr)"></div>
+      <p class="src-note" style="margin-top:20px">When all three elements work together, the body gradually finds its natural balance. It's a process, not a one-time act.</p>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">In conclusion</div>
+        <h2>A system, not a diet</h2>
+        <p>For weight to start dropping — and stay lower — the goal isn't to find a new diet. It's to build an eating system that supports your body every day.</p>
+      </div>
+      <div class="concl-list" id="concl-list"></div>
+      <div class="key-think big-idea"><span>Main idea</span> When the system works, the body gradually comes into balance. Not through willpower, but through understanding.</div>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow">Where to start today</div>
+        <h2>Your first steps</h2>
+        <p>You don't have to change everything at once. Start small — and the system begins to build itself.</p>
+      </div>
+      <div class="steps-grid" id="first-steps"></div>
+      <div class="remember">Remember: you're not broken. You just need the right system. And you're already on the right path.</div>
+      <button class="cta-next" id="cta-next" data-i18n="learn.cta">Go to the system</button>
+    </div>
+
+    <div class="lec-block">
+      <div class="sec-head">
+        <div class="eyebrow" data-i18n="src.eyebrow">Evidence</div>
+        <h2 data-i18n="src.title">Proven, further reading</h2>
+        <p data-i18n="src.sub">The principles here line up with public health bodies. A few primary sources if you want to read deeper.</p>
+      </div>
+      <div class="src-list" id="src-list"></div>
+      <div class="src-disclaim" id="src-disclaim" data-i18n="src.disclaimer">This portal is educational and is not medical advice. For anything personal, speak with your doctor or a registered dietitian.</div>
+    </div>
+
+  </section>
+  <section class="panel" id="proto">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="pillars.eyebrow">Four pillars</div>
+      <h2 data-i18n="pillars.title">Four levers for your body</h2>
+      <p data-i18n="pillars.sub">Glucose, iron, thyroid, liver. Each pillar is a short protocol of what to add, what to avoid, and how to build your day.</p>
+    </div>
+    <div class="proto-tabs" id="proto-tabs"></div>
+    <div class="proto-body" id="proto-body"></div>
+    <div id="iron-extra"></div>
+  </section>
+
+  <!-- ============ CYCLE ============ -->
+  <section class="panel" id="cycle">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="cycle.eyebrow">Across your month</div>
+      <h2 data-i18n="cycle.title">Eat with your cycle</h2>
+      <p data-i18n="cycle.sub">Four phases, four ways to support your body with food, drinks and movement.</p>
+    </div>
+    <div class="cycle-rail" id="cycle-rail"></div>
+    <div class="cycle-detail" id="cycle-detail"></div>
+  </section>
+
+  <!-- ============ RECIPES ============ -->
+  <section class="panel" id="recipes">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="meals.eyebrow">Meal library</div>
+      <h2 data-i18n="meals.title">100 single-serving meals</h2>
+      <p data-i18n="meals.sub">Every meal is a single serving with full macros. Filter, scale and open any one for the method.</p>
+    </div>
+    <div class="meals-toolbar"><button class="btn btn-ghost" id="add-meal-btn"><svg class="i" style="width:15px;height:15px"><use href="#i-spark"/></svg> <span data-i18n="meals.add">Add a meal</span></button></div>
+    <div class="filters">
+      <div class="fgroup"><label data-i18n="meals.meal_type">Meal type</label><div class="chips" id="meal-chips"></div></div>
+      <div class="fgroup" style="display:none"><label data-i18n="meals.goal">Pillar</label><div class="chips" id="goal-chips"></div></div>
+      <div class="fgroup searchbox"><label data-i18n="meals.sort">Search</label><input type="text" id="search" data-i18n-ph="meals.search" placeholder="search"></div>
+      <div class="fgroup" style="flex-basis:100%"><label data-i18n="meals.diet">Diet</label><div class="chips" id="diet-chips"></div></div>
+    </div>
+    <button class="filters-toggle" id="filters-toggle"><svg class="i" style="width:15px;height:15px"><use href="#i-calc"/></svg> <span data-i18n="meals.filters">Filters</span><span class="ft-count" id="ft-count"></span></button>
+    <div class="filters2">
+      <div class="fgroup"><label data-i18n="meals.sort">Sort by</label>
+        <select class="sortsel" id="sort-select">
+          <option value="featured" data-i18n="meals.sort_featured">Featured</option>
+          <option value="kcal-asc" data-i18n="meals.sort_kcal_asc">Calories, low to high</option>
+          <option value="kcal-desc" data-i18n="meals.sort_kcal_desc">Calories, high to low</option>
+          <option value="p-desc" data-i18n="meals.sort_prot_desc">Protein, high to low</option>
+          <option value="p-asc" data-i18n="meals.sort_prot_asc">Protein, low to high</option>
+        </select>
+      </div>
+      <div class="fgroup rangegroup">
+        <div class="rhead"><label data-i18n="meals.kcal_range">Calories</label><span class="rangeval" id="kval"></span></div>
+        <div class="dualrange" id="krange"><div class="track"><div class="fill" id="kfill"></div></div><input type="range" class="lo" id="kLo" aria-label="minimum calories"><input type="range" class="hi" id="kHi" aria-label="maximum calories"></div>
+      </div>
+      <div class="fgroup rangegroup">
+        <div class="rhead"><label data-i18n="meals.prot_range">Protein</label><span class="rangeval" id="pval"></span></div>
+        <div class="dualrange" id="prange"><div class="track"><div class="fill" id="pfill"></div></div><input type="range" class="lo" id="pLo" aria-label="minimum protein"><input type="range" class="hi" id="pHi" aria-label="maximum protein"></div>
+      </div>
+      <div class="fgroup"><label>&nbsp;</label><button class="reset-btn" id="reset-filters" data-i18n="meals.reset">Reset all</button></div>
+    </div>
+    <div class="count">
+      <span id="count-txt"></span>
+      <span class="scaler"><button id="dec" aria-label="fewer servings">−</button><span id="serv">1 serving</span><button id="inc" aria-label="more servings">+</button></span>
+    </div>
+    <div class="grid" id="recipe-grid"></div>
+  </section>
+
+  <!-- ============ SHOPPING (from plan) ============ -->
+  <section class="panel" id="shop">
+    <div class="sec-head">
+      <div class="eyebrow" data-i18n="shop.eyebrow">From your plan</div>
+      <h2 data-i18n="shop.title">Shopping list</h2>
+      <p data-i18n="shop.sub">Built from the day plan you just made. Check items off as you shop.</p>
+    </div>
+    <div id="shop-from-plan"></div>
+    <div class="staples-head">
+      <h3 data-i18n="shop.staples">Pantry staples</h3>
+      <p data-i18n="shop.staples_sub">Good to keep on hand for the whole approach.</p>
+    </div>
+    <div class="shop-grid" id="shop-grid"></div>
+  </section>
+  </main>
+  <div class="overlay" id="overlay"><div class="modal" id="modal"></div></div>
+  <script src="./js/auth.js?v=6"></script>
+  <script src="./js/main.js?v=7"></script>
+  <script>
+      // ── ZNP BURGER NAV ─────────────────────────────────────────────
+(function () {
+  var burger   = document.getElementById('znpBurger');
+  var dropdown = document.getElementById('znpDropdown');
+  var label    = document.getElementById('znpActiveLabel');
+  if (!burger || !dropdown) return;
+
+  var open = false;
+
+  function znpToggle() {
+    open = !open;
+    burger.classList.toggle('znp-open', open);
+    dropdown.classList.toggle('znp-open', open);
+    burger.setAttribute('aria-expanded', String(open));
+  }
+
+  burger.addEventListener('click', function (e) { e.stopPropagation(); znpToggle(); });
+
+  // при кліку на пункт дропдауну — перемикаємо таб і закриваємо
+  dropdown.querySelectorAll('button[data-tab]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      // оновлюємо активний клас в дропдауні
+      dropdown.querySelectorAll('button').forEach(function (b) { b.classList.remove('on'); });
+      btn.classList.add('on');
+      // оновлюємо підпис поруч з бургером
+      if (label) label.textContent = btn.dataset.label || '';
+      // синхронізуємо з основним navin (якщо є)
+      document.querySelectorAll('.navin button[data-tab]').forEach(function (nb) {
+        nb.classList.toggle('on', nb.dataset.tab === btn.dataset.tab);
+      });
+      // закриваємо меню
+      znpToggle();
+    });
+  });
+
+  // синхронізуємо бургер-дропдаун коли клікають по основному navin
+  document.querySelectorAll('.navin button[data-tab]').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      dropdown.querySelectorAll('button[data-tab]').forEach(function (db) {
+        db.classList.toggle('on', db.dataset.tab === btn.dataset.tab);
+      });
+      if (label) {
+        var span = btn.querySelector('span[data-i18n]');
+        label.textContent = span ? span.textContent : (btn.dataset.tab || '');
+      }
+    });
+  });
+
+  // клік за межами — закрити
+  document.addEventListener('click', function () { if (open) znpToggle(); });
+})();
+  </script>
+</body></html>
