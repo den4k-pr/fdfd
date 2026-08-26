@@ -94,6 +94,11 @@
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.2px;
+  margin-top: 4px;
+}
+
+.s1-pretitle{
+  font-weight: 700; text-transform: uppercase; font-size: 14px; margin-bottom: 4px;
 }
 
 /* Start Date Badge */
@@ -2561,6 +2566,9 @@ text-transform: uppercase;
   .contacts__policy {
     font-size: 3.1818vw;
     margin-bottom: 3.4091vw;
+  }
+  .s1-pretitle{
+    font-size: 3.1818vw;
   }
   .contacts__copyright {
     font-size: 3.1818vw;
