@@ -3,7 +3,7 @@
 
 .s1 {
   width: 440px;
-  height: 820px;
+  height: 860px;
   position: relative;
   overflow: hidden;
   background-color: #ffffff;
@@ -1943,7 +1943,7 @@ text-transform: uppercase;
   /* .s1 */
   .s1 {
     width: 100vw;
-    height: 186.3636vw;
+    height: 197.3636vw;
   }
   .s1-gradient-overlay {
     height: 56.8182vw;
