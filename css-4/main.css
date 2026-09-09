@@ -1,0 +1,3433 @@
+/* =========================================
+   Component: S16 (Mobility Club Hero)
+   ========================================= */
+
+.s16 {
+  width: 428px;
+  height: 805px;
+  position: relative;
+  background: #F8F5F2; /* Колір фону під картинкою, якщо вона не закриває все */
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.s16__top-banner {
+  position: absolute;
+  top: 30px;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  background: #46642F;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  z-index: 10;
+}
+
+.s16__banner-text {
+  color: #F5C9C8;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.s16__star {
+  width: 10px;
+  height: 10px;
+  background: #F5C9C8;
+  transform: rotate(45deg); /* Робимо ромбік, як на макеті */
+}
+
+.s16__bg {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.s16__content {
+  position: absolute;
+  top: 200px;
+  left: 22px;
+  width: 267px;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.s16__intro {
+  margin-bottom: 20px;
+}
+
+.s16__intro-norm {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 500;
+  line-height: 24px;
+}
+
+.s16__intro-green {
+  color: #40692E;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 800;
+  line-height: 24px;
+}
+
+.s16__features {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.s16__feature {
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 4px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+.s16__icon-box {
+  width: 32px;
+  height: 32px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.s16__icon {
+  display: block;
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
+
+.s16__feature-text {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  line-height: 18px;
+  padding-right: 12px;
+}
+
+.s16__fw-700 {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.s16__disclaimer {
+  color: #476430;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-style: italic;
+  line-height: 18px;
+  margin-top: 6px;
+  max-width: 155px;
+}
+
+.s16__hero {
+  position: absolute;
+  top: 235px;
+  right: 0px;
+  width: 355px; /* Навмисно більше за контейнер, щоб обрізалось як на макеті */
+  height: auto;
+  z-index: 3;
+}
+
+.s16__bottom-card {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  width: 100%;
+  height: 192px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.55) 0%, rgba(255, 255, 255, 0.95) 100%);
+  box-shadow: 0px -1px 10px rgba(0, 0, 0, 0.10);
+  border-radius: 45px 45px 0 0;
+  backdrop-filter: blur(27.5px);
+  -webkit-backdrop-filter: blur(27.5px);
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 22px 44px 0 44px; /* Компенсуємо розширення width */
+  box-sizing: border-box;
+}
+
+.s16__btn {
+  width: 380px;
+  height: 57px;
+  background: url(../images-3/kke.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 28px;
+  border: none;
+  cursor: pointer;
+}
+
+.s16__btn-spacer {
+  width: 18px; /* Балансує стрілку для ідеального центрування тексту */
+}
+
+.s16__btn-text {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.s16__btn-arrow {
+  width: 18px;
+  height: auto;
+  display: block;
+}
+
+.s16__guarantee {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.s16__guarantee-icon {
+  width: 14px;
+  height: auto;
+  display: block;
+}
+
+.s16__guarantee-text {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.s16__scroll {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  margin-top: 24px;
+}
+
+.s16__scroll-text {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.s16__scroll-icon {
+  width: 14px;
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+/* =========================================
+   Component: S17 (Offer Card)
+   ========================================= */
+
+.s17 {
+  width: 428px;
+  margin: 0 auto;
+  padding: 45px 24px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FEF9F3 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  box-sizing: border-box;
+  font-family: 'Source Sans 3', sans-serif;
+}
+
+.s17__top-grid {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+.s17__top-item {
+  flex: 1;
+  background: #FFFFFF;
+  border-radius: 12px;
+  padding: 14px 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+}
+
+.s17__top-icon {
+  width: 25px;
+  height: 25px;
+  object-fit: contain;
+}
+
+.s17__top-text {
+  text-align: center;
+  color: #151515;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.s17__top-text strong {
+  font-weight: 700;
+}
+
+.s17__card {
+  width: 100%;
+  background: #FFFFFF;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+  border-radius: 24px;
+  padding: 24px 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.s17__card-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.s17__badge {
+  padding: 1px 11px;
+  border-radius: 100px;
+  border: 1px solid #C7827E;
+  color: #C7827E;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 18px;
+  text-align: center;
+}
+
+.s17__price-wrap {
+  width: 203px;
+  height: 79px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.s17__price-val {
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 69.58px;
+  font-weight: 700;
+  line-height: 78.28px;
+}
+
+.s17__price-sub {
+  position: absolute;
+  left: 126px;
+  top: 47px;
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 18.95px;
+  font-weight: 400;
+  line-height: 21.32px;
+  opacity: 0.8;
+}
+
+.s17__price-desc {
+  color: #C7827E;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 18px;
+  text-align: center;
+}
+
+.s17__subtitle {
+  color: #151515;
+  font-size: 18px;
+  font-style: italic;
+  font-weight: 400;
+  line-height: 18px;
+  text-align: center;
+  width: 100%;
+}
+
+.s17__features {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.s17__feature {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.s17 .s16__btn{
+  width: 100%;
+}
+
+.s17__f-icon-box {
+  width: 35px;
+  height: 35px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.s17__f-icon {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.s17__f-text {
+  color: #151515;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.s17__fw-600 {
+  font-weight: 600;
+}
+
+.s17__fw-400 {
+  font-weight: 400;
+}
+
+.s17__op-80 {
+  color: rgba(21, 21, 21, 0.8);
+}
+
+.s17__guarantee {
+  color: #151515;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+}
+
+.s17__guarantee-icon{
+  width: 13px;
+}
+
+
+
+
+
+
+
+/* =========================================
+   Component: S18 (Who it's for Cards)
+   ========================================= */
+
+.s18 {
+  width: 428px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.s18__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+}
+
+.s18__badge {
+  padding: 1px 11px;
+  border-radius: 100px;
+  outline: 1px solid #C7827E;
+  outline-offset: -1px;
+  color: #C7827E;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s18__title {
+  width: 383px;
+  text-align: center;
+  margin: 0;
+}
+
+.s18__title-dark {
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.s18__title-green-i {
+  color: #40692E;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 44px;
+}
+
+.s18__desc {
+  width: 383px;
+  text-align: center;
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.s18__cards {
+  width: 380px;
+  height: 569px;
+  position: relative;
+  border-radius: 12px; /* Додано для згладжування кутів від тіні */
+}
+
+/* --- Права картка (What you don't need) --- */
+
+.s18__card-right {
+  position: absolute;
+  left: 173px;
+  top: 27px;
+  width: 207px;
+  height: 525px;
+  background: #FCF4F2;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 28px 8px 28px 32px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  z-index: 1;
+}
+
+.s18__badge-right {
+  padding: 4px 8px;
+  background: #C7827E;
+  border-radius: 1000px;
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.s18__item-right {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.s18__icon-right {
+  width: 12px;
+  height: 12px;
+  margin-top: 2px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.s18__text-right {
+  flex: 1;
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.s18__fw-600 {
+  font-weight: 600;
+}
+
+/* --- Ліва картка (This is you) --- */
+
+.s18__card-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 192px;
+  height: 569px;
+  background: radial-gradient(ellipse 90.88% 90.88% at 50.00% 9.12%, #548E3C 0%, #40692E 100%);
+  border-radius: 12px;
+  padding: 14px 8px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  z-index: 2;
+}
+
+.s18__badge-left-wrapper {
+  align-self: stretch;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s18__badge-left {
+  padding: 4px 8px;
+  background: #FFC1BE;
+  border-radius: 1000px;
+  color: #40692E;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  width: 100%;
+  text-align: center;
+}
+
+.s18__item-left {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.s18__icon-left {
+  width: 15.5px;
+  height: 12.3px;
+  margin-top: 4px;
+  display: block;
+  flex-shrink: 0;
+}
+
+.s18__text-left {
+  flex: 1;
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.s18__fw-700 {
+  font-weight: 700;
+}
+
+
+
+
+/* =========================================
+   Component: S19 (Your Week Schedule)
+   ========================================= */
+
+.s19 {
+  width: 428px;
+  background: linear-gradient(180deg, #FFFFFF 0%, #FEF9F3 100%);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.s19__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.s19__badge {
+  padding: 1px 11px;
+  border-radius: 100px;
+  border: 1px solid #C7827E;
+  color: #C7827E;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+
+.s19__title {
+  width: 383px;
+  text-align: center;
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 37px;
+  margin: 0;
+}
+
+.s19__title-green {
+  color: #40692E;
+  font-style: italic;
+}
+
+.s19__desc {
+  width: 383px;
+  text-align: center;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.s19__desc-pink {
+  color: #C7827E;
+}
+
+.s19__desc-dark {
+  color: #151515;
+}
+
+.s19__workout {
+  width: 100%;
+  height: 223px;
+  position: relative;
+  background-color: #FFFFFF;
+  border-radius: 24px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+/* Фонові зображення для карток тренувань */
+.s19__workout--1 { background-image: url('../images-3/img17.webp'); }
+.s19__workout--2 { background-image: url('../images-3/img18.webp'); }
+.s19__workout--3 { background-image: url('../images-3/img19.webp'); }
+
+.s19__workout-bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 35px;
+  padding: 0 24px;
+  background: rgba(21, 21, 21, 0.38);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.s19__workout-name {
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.s19__workout-name strong {
+  font-weight: 700;
+}
+
+.s19__workout-time {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.s19__time-icon {
+  width: 13px;
+  height: 13px;
+  display: block;
+  object-fit: contain;
+}
+
+.s19__rest {
+  width: 100%;
+  padding: 8px;
+  background: #FCF4F2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  box-sizing: border-box;
+}
+
+.s19__rest-icon {
+  width: 41px;
+  height: 35px;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+}
+
+.s19__rest-text {
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+}
+
+.s19__rest-pink {
+  color: #C7827E;
+  font-weight: 700;
+}
+
+.s19__rest-dark {
+  color: #151515;
+  font-weight: 400;
+}
+
+.s19__choice {
+  width: 100%;
+  padding: 8px;
+  background: #F9E4E2;
+  border-radius: 12px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.s19__choice-title {
+  color: #C7827E;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+}
+
+.s19__choice-text {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 21px;
+}
+
+
+
+
+
+/* =========================================
+   Component: S20 (Live Workout)
+   ========================================= */
+
+.s20 {
+  width: 428px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.s20__badge {
+  padding: 1px 11px;
+  border-radius: 100px;
+  border: 1px solid #C7827E;
+  color: #C7827E;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+
+.s20__title {
+  text-align: center;
+  margin: 0;
+}
+
+.s20__title-dark {
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+.s20__title-green {
+  color: #40692E;
+  font-family: 'Lora', serif;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 31px;
+}
+
+.s20__graphic {
+  position: relative;
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s20__image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Текст поверх рожевої плашки в img27.webp */
+.s20__pill-text {
+  position: absolute;
+  bottom: 8px;
+  right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+.s20__pill-plus {
+  font-weight: 400;
+}
+
+.s20__pill-num {
+  font-weight: 700;
+}
+
+.s20__desc {
+  text-align: center;
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* Нижній банер розтягується на всю ширину 428px */
+.s20__footer {
+  width: 428px;
+  margin-left: -24px;
+  margin-right: -24px;
+  margin-bottom: -45px; /* Притискаємо до самого низу контейнера, компенсуючи padding */
+  padding: 8px 24px;
+  background: linear-gradient(90deg, #241D1B 0%, #5F3E3A 100%), #151515;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.s20__footer-icon {
+  width: 20px;
+  height: 20px;
+  display: block;
+  object-fit: contain;
+}
+
+.s20__footer-text {
+  color: #FFC1BE;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+
+
+
+
+
+
+/* =========================================
+   Component: S21 (What's inside the club)
+   ========================================= */
+
+.s21 {
+  width: 428px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Source Sans 3', sans-serif;
+  overflow: hidden;
+}
+
+/* --- Header --- */
+.s21__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.s21__badge {
+  padding: 1px 11px;
+  border-radius: 100px;
+  outline: 1px solid #C7827E;
+  outline-offset: -1px;
+  color: #C7827E;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+
+.s21__title {
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  text-align: center;
+  margin: 0;
+}
+
+/* --- Hero Section --- */
+.s21__hero {
+  width: 100%;
+  height: 350px;
+  position: relative;
+  display: flex;
+  gap: 16px;
+}
+
+.s21__decor {
+  width: 206.35px;
+  height: 105.88px;
+  position: absolute;
+  left: 333.75px;
+  transform: rotate(161deg);
+  box-shadow: 0px 0px 8.16px white, 0px 0px 3.31px white;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.s21__decor--1 {
+  top: 326.72px;
+  outline: 2.21px solid #F44675;
+  outline-offset: -1.1px;
+}
+
+.s21__decor--2 {
+  top: 326.71px;
+  outline: 3.21px solid #EBBAB7;
+  outline-offset: -1.61px;
+}
+
+.s21__hero-left {
+  width: 100%;
+  height: 360.6px;
+  position: absolute;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.s21__phone-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+
+  border-radius: 24px; /* Легке округлення, якщо картинка має гострі кути */
+}
+
+.s21__hero-right {
+  flex: 1;
+  display: flex;
+  max-width: 201px;
+  margin-left: auto;
+  flex-direction: column;
+  z-index: 2;
+}
+
+.s21__hr-banner {
+  padding: 8px 12px;
+  background: linear-gradient(90deg, #241D1B 0%, #5F3E3A 100%), #2E2E2F;
+  border-radius: 12px;
+  color: #FFC1BE;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.s21__hr-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.s21__hr-icon-box {
+  width: 35px;
+  height: 35px;
+  background: rgba(234, 210, 206, 0.19);
+  border-radius: 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.s21__hr-icon-inner {
+  width: 20px;
+  height: 20px;
+  background: #C7827E;
+}
+
+.s21__hr-text {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.s21__hr-action {
+  margin-top: 55px; /* Вирівняно згідно абсолютних координат з макета */
+  color: #151515;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.s21__fw-700 { font-weight: 700; }
+.s21__tt-upper { text-transform: uppercase; }
+
+.s21__hr-desc {
+  margin-top: 12px;
+  color: #151515;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 18px;
+  padding-left: 13px;
+}
+
+.s21__hr-desc li{
+  list-style: initial;
+}
+
+/* --- Cards Section --- */
+.s21__cards {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.s21__card {
+  height: 102px;
+  background: #FCF4F2;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  box-sizing: border-box;
+}
+
+.s21__card--1 { padding-right: 12px; }
+.s21__card--2 { padding-left: 12px; }
+.s21__card--3 { padding-right: 12px; }
+.s21__card--4 { padding-left: 12px; height: auto; align-items: stretch; }
+
+.s21__card-img-box {
+  width: 122px;
+  height: 100%;
+  background: #D1D1D1;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.s21__card-img-box--stretch {
+  align-self: stretch;
+}
+
+.s21__card-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px;
+}
+
+.s21__card-content--py {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.s21__card-title {
+  color: #C7827E;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.s21__card-desc {
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+/* Зображення всередині карток */
+.s21__img-1 {
+  width: 122px;
+  height: 102px;
+  object-fit: contain;
+  max-width: none;
+}
+
+.s21__img-2 {
+color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.s21__img-3 {
+  width: 122px;
+  height: 102px;
+  border-radius: 12px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.s21__img-4 {
+  width: 165px;
+  height: 111px;
+  position: absolute;
+  left: -37px;
+  top: -1px;
+  max-width: none;
+}
+
+/* Бейдж LIVE на 2-й картці */
+.s21__badge-live {
+  position: absolute;
+  left: 93px;
+  top: 6px;
+  background: rgba(0, 0, 0, 0.32);
+  border-radius: 38.7px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.55px;
+  padding: 0 3.1px;
+}
+
+.s21__badge-dot {
+  width: 4.26px;
+  height: 4.26px;
+  background: #EE4138;
+  border-radius: 50%;
+  border: 0.2px solid #FFFFFF;
+}
+
+.s21__badge-text {
+  color: #FFFFFF;
+  font-size: 5.42px; /* Оригінальний розмір з макета */
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+
+
+
+
+/* =========================================
+   Component: S22 (It's a club, not a program)
+   ========================================= */
+
+.s22 {
+  width: 428px;
+  height: 1072px;
+  position: relative;
+  background: linear-gradient(180deg, #F4E6DB 0%, #FFFFFF 100%);
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: 'Source Sans 3', sans-serif;
+  overflow: hidden;
+}
+
+.s22__bg-hero {
+  position: absolute;
+  width: 408px;
+  height: 396px;
+  right: 0px;
+  top: -56px;
+  transform-origin: top left;
+  object-fit: contain;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.s22__header {
+  position: absolute;
+  left: 24px;
+  top: 45px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 2;
+}
+
+.s22__title {
+  width: 178px;
+  margin: 0;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 39px;
+}
+
+.s22__title-italic {
+  font-style: italic;
+  color: #2E2E2F;
+}
+
+.s22__title-dark {
+  color: #2E2E2F;
+  white-space: nowrap;
+}
+
+.s22__subtitle {
+  width: 236px;
+  color: #323232;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.s22__cards {
+  position: absolute;
+  left: 24px;
+  top: 255px;
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  z-index: 2;
+}
+
+.s22__card {
+  width: 380px;
+  padding: 14px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.10);
+  border-radius: 24px;
+  outline: 1px solid #FFFFFF;
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 14px;
+  box-sizing: border-box;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+
+.s22__card:nth-child(1){
+  background-image: url(../images-3/img21.webp);
+}
+
+.s22__card:nth-child(2){
+  background-image: url(../images-3/img25.webp);
+}
+
+.s22__badge {
+  height: 35px;
+  padding: 0 11px;
+  background: #C7827E;
+  border-radius: 75px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.s22__img-box {
+  width: 352px;
+  height: 179px;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+
+
+.s22__overlay-title {
+  position: absolute;
+  left: 0;
+  bottom: 12px;
+  width: 100%;
+  box-sizing: border-box;
+  white-space: nowrap;
+  color: #FFFFFF;
+  font-size: 23px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  text-shadow: 0px 0px 20px rgba(0, 0, 0, 1.00);
+}
+
+.s22__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.s22__list-header {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 18px;
+}
+
+.s22__list-item {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  width: 100%;
+}
+
+.s22__check-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+}
+
+.s22__list-text {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.s22__footer-text {
+  width: 100%;
+  color: #000000;
+  font-size: 16px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+
+
+
+
+
+
+/* =========================================
+   Component: S23 (Meet your coach)
+   ========================================= */
+
+.s23 {
+  width: 428px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Source Sans 3', sans-serif;
+  overflow: hidden;
+    position: relative;
+}
+
+.s23__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.s23__badge {
+  padding: 1px 11px;
+  border-radius: 100px;
+  outline: 1px solid #C7827E;
+  outline-offset: -1px;
+  color: #C7827E;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+
+.s23__title {
+  width: 383px;
+  text-align: center;
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 44px;
+  margin: 0;
+}
+
+.s23__desc {
+  width: 383px;
+  text-align: center;
+  margin: 0;
+}
+
+.s23__desc-norm {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.s23__desc-bold {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+/* --- Галерея (Фото) --- */
+.s23__gallery {
+  width: 100%;
+  height: 336px;
+
+}
+
+.s23__gallery-bg {
+  width: 100%;
+  height: 332px;
+  position: absolute;
+  left: 0;
+  top: 4px;
+  overflow: hidden;
+}
+
+.s23__card-back {
+  width: 212.67px;
+  height: 291.77px;
+  position: absolute;
+  background: linear-gradient(0deg, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0.35) 100%);
+  border-radius: 24px;
+  border: 1px solid #FFFFFF;
+}
+
+.s23__card-back--right {
+  left: 240.12px;
+  top: 28.88px;
+  transform: rotate(-8deg);
+  transform-origin: top left;
+}
+
+.s23__card-back--left {
+  left: -25.67px;
+  top: 1.11px;
+  transform: rotate(7deg);
+  transform-origin: top left;
+}
+
+.s23__card-solid {
+  width: 266px;
+  height: 285px;
+  left: 81px;
+  top: 47px;
+  position: absolute;
+  background: #E2E1E1;
+  border-radius: 24px;
+  outline: 2px solid #FFFFFF;
+  outline-offset: -2px;
+}
+
+.s23__gallery-img {
+  width: 100%; /* Зменшив ширину, щоб краще вписати в контейнер (в оригіналі img7.webp містить білі поля) */
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 100px;
+  z-index: 2;
+}
+
+/* --- Секція Інфо --- */
+.s23__info-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.s23__stats-banner {
+  width: 100%;
+  padding: 10px 14px;
+  background: url(../images-3/2e.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.s23__stat-icon {
+  width: 37px;
+  height: 37px;
+  position: relative;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: #C7827E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s23__stat-icon-inner {
+  width: 21px;
+  height: 17px;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+
+.s23__stat-col {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.s23__stat-val {
+  color: #FFFFFF;
+  font-size: 31.96px;
+  font-weight: 800;
+  line-height: 37.11px;
+  text-align: center;
+}
+
+.s23__stat-val-small {
+  font-size: 25.57px;
+  text-transform: uppercase;
+}
+
+.s23__stat-lbl {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  text-transform: uppercase;
+  opacity: 0.8;
+  text-align: center;
+  line-height: 1;
+}
+
+.s23__stat-divider {
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  background: #C7827E;
+}
+
+/* --- Live Banner --- */
+.s23__live-banner {
+  width: 100%;
+  padding-top: 8px;
+  padding-left: 12px;
+  background: linear-gradient(90deg, #241D1B 0%, #5F3E3A 100%);
+  border-radius: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end; /* Вирівнюємо по низу через картинку дівчини */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.s23__live-text-side {
+  width: 206px;
+  padding-bottom: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.s23__live-badge {
+  padding: 2px 6.74px;
+  background: #573E3A;
+  border-radius: 84.21px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3.37px;
+  color: #FFFFFF;
+  font-size: 11.79px;
+  font-weight: 400;
+  text-transform: uppercase;
+  align-self: flex-start;
+}
+
+.s23__live-dot {
+  width: 9.26px;
+  height: 9.26px;
+  background: #FFC1BE;
+  border-radius: 50%;
+}
+
+.s23__live-title {
+  margin: 0;
+}
+
+.s23__lt-white {
+  color: #FFFFFF;
+  font-family: 'Lora', serif;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.s23__lt-pink {
+  color: #FFC1BE;
+  font-family: 'Lora', serif;
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.s23__live-desc {
+  margin: 0;
+}
+
+.s23__ld-norm {
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.s23__ld-bold {
+  color: #FFC1BE;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+.s23__live-img-side {
+  width: 137px;
+  height: 173px;
+  position: relative;
+}
+
+.s23__live-img-overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+z-index: 1;
+  opacity: 0.15; /* Зробив прозорим, щоб градієнт лягав легко */
+}
+
+.s23__live-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+  display: block;
+}
+
+
+
+
+
+
+/* =========================================
+   Component: S24 (Reviews Slider)
+   ========================================= */
+
+.s24 {
+  width: 428px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 0; /* Бокові відступи 24px задаються елементам всередині, щоб слайдер міг виходити за край */
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.s24__header {
+  width: 100%;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
+  margin-bottom: 32px;
+}
+
+.s24__title {
+  text-align: center;
+  margin: 0;
+}
+
+.s24__title-dark {
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 37px;
+}
+
+.s24__title-green {
+  color: #40692E;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 37px;
+}
+
+/* --- Слайдер --- */
+.s24__swiper {
+  width: 100%;
+  height: 470px;
+}
+
+.s24__slide {
+  width: 284px; /* Жорстка ширина як на макеті */
+  height: 470px;
+  background: #FFFFFF;
+  border-radius: 24px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.s24__slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Щоб зображення ідеально заповнювало карточку без спотворень */
+  display: block;
+}
+
+/* --- Навігація --- */
+.s24__nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  margin-top: 32px;
+  padding: 0 24px;
+}
+
+.s24__btn {
+  height: 42px;
+  padding: 0 50px;
+  background: #40692E;
+  border-radius: 12px;
+  /* Box-shadow працює краще за outline для скруглених кнопок на всіх пристроях */
+  box-shadow: 0 0 0 4px rgba(64, 105, 46, 0.50); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  transition: opacity 0.3s;
+}
+
+.s24__btn:active {
+  opacity: 0.7;
+}
+
+/* Зменшуємо прозорість для неактивної кнопки (початок/кінець слайдера) */
+.s24__btn.swiper-button-disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.s24__btn--prev {
+  transform: rotate(180deg);
+}
+
+.s24__arrow {
+  width: 24px; /* Регулюй розмір стрілочки за потребою */
+  height: auto;
+  display: block;
+}
+
+
+
+
+
+
+
+/* =========================================
+   Component: S25 (Gifts Section)
+   ========================================= */
+
+.s25 {
+  width: 428px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 24px;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  font-family: 'Source Sans 3', sans-serif;
+  overflow: hidden;
+}
+
+/* --- Header --- */
+.s25__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.s25__badge {
+  padding: 1px 11px;
+  border-radius: 100px;
+  border: 1px solid #C7827E;
+  color: #C7827E;
+  font-size: 16px;
+  font-weight: 800;
+  text-transform: uppercase;
+  line-height: 18px;
+  text-align: center;
+}
+
+.s25__title {
+  text-align: center;
+  color: #151515;
+  font-family: 'Lora', serif;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 44px;
+  margin: 0;
+}
+
+.s25__title-green {
+  color: #40692E;
+  font-style: italic;
+  text-transform: uppercase;
+}
+
+.s25__subtitle {
+  text-align: center;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+/* --- Timer --- */
+.s25__timer {
+  width: 380px;
+  height: 94px;
+  background: url(../images-3/1e.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 15px 14px;
+  gap: 25px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+.s25__timer-bow {
+  width: 110px;
+  height: 73px;
+  position: absolute;
+  left: -25px;
+  top: -21.81px;
+  z-index: 2;
+  object-fit: contain;
+}
+
+.s25__timer-bow-shadow {
+  width: 110px;
+  height: 73px;
+  position: absolute;
+  left: -24.79px;
+  top: -19.38px;
+  opacity: 0.55;
+  filter: blur(2.15px);
+  z-index: 1;
+}
+
+.s25__timer-col {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 11px;
+}
+
+.s25__timer-lbl {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.s25__timer-spacer {
+  height: 33px;
+  width: 10px;
+}
+
+/* --- Cards Container --- */
+.s25__cards {
+  width: 380px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+/* --- Gift 1 --- */
+.s25__gift {
+  width: 100%;
+  position: relative;
+  background: #FBF7F3;
+  border-radius: 12px;
+}
+
+.s25__gift--1 {
+  height: 283px;
+}
+
+.s25__g1-phone {
+  width: 180px;
+  height: 300px;
+  position: absolute;
+  left: 200px;
+  top: -17px;
+  z-index: 2;
+  object-fit: contain;
+}
+
+.s25__g1-phone-shadow {
+  width: 163px;
+  height: 264px;
+  position: absolute;
+  left: 214px;
+  top: 5px;
+  opacity: 0.56;
+  filter: blur(8.10px);
+  z-index: 1;
+}
+
+.s25__g1-content {
+  position: absolute;
+  left: 0;
+  top: -0.3px;
+  width: 227px;
+  padding: 14px 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.s25__g-badge {
+  height: 35px;
+  padding: 0 11px;
+  border-radius: 75px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.s25__g-badge--pink { background: #C7827E; }
+.s25__g-badge--green { background: #40692E; color: #F4E7E3; }
+
+.s25__g1-title {
+  color: #151515;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+  width: 100%;
+}
+
+.s25__g1-list {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  width: 100%;
+}
+
+.s25__g1-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 7px;
+}
+
+.s25__check-icon {
+  width: 16px;
+  height: 16px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.s25__g1-text {
+  flex: 1;
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+.s25__fw-700-pink {
+  color: #C7827E;
+  font-weight: 700;
+}
+
+.s25__g1-lock {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 14px;
+  background: rgba(199, 130, 126, 0.14);
+  border-top-right-radius: 24px;
+  border-bottom-left-radius: 24px;
+  backdrop-filter: blur(3.20px);
+  -webkit-backdrop-filter: blur(3.20px);
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  z-index: 4;
+}
+
+.s25__g1-lock-icon {
+  width: 40px;
+  height: 40px;
+  background: #FFFFFF;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+
+.s25__g1-lock-text {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+  opacity: 0.6;
+}
+
+/* --- Gift 2 --- */
+.s25__gift--2 {
+  height: 277px;
+}
+
+.s25__g2-vault {
+ position: absolute;
+    left: -31px;
+    top: -37px;
+    width: 250px;
+    height: auto;
+    z-index: 2;
+    object-fit: contain;
+}
+
+.s25__g2-vault-shadow {
+  position: absolute;
+  left: -20px;
+  top: -12px;
+  width: 250px;
+  height: auto;
+  opacity: 0.33;
+  filter: blur(4.05px);
+  z-index: 1;
+}
+
+.s25__g2-content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 182px;
+  padding: 14px 8px 14px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+  z-index: 3;
+  box-sizing: border-box;
+}
+
+.s25__g2-title {
+  color: #151515;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: right;
+  width: 100%;
+}
+
+.s25__g2-desc {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  text-align: right;
+  line-height: 1.3;
+}
+
+.s25__fw-700 {
+  font-weight: 700;
+}
+
+.s25__fw-700-green {
+  color: #40692E;
+  font-weight: 700;
+}
+
+.s25__g2-strip {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 68px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  z-index: 4;
+}
+
+.s25__g2-feature {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.s25__g2-icon {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.s25__g2-feature-text {
+  color: #151515;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 18px;
+}
+
+
+.s25__timer-col {
+  width: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px; /* Зменшив з 11px, щоб цифри і текст були поруч */
+}
+
+.s25__timer-val {
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 42px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.s25__timer-spacer {
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  margin-top: -6px; /* Легке вирівнювання двокрапки відносно цифр */
+}
+
+
+
+
+
+
+
+/* =========================================
+   Component: S26 (What 14€ gets you)
+   ========================================= */
+
+.s26 {
+  width: 428px;
+  background: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 45px 24px;
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+.s26__card {
+  width: 380px;
+  padding: 32px 14px;
+  background-image: url('../images-3/img41.webp');
+  background-size: 100% 100%;
+  background-position: center top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.s26__header {
+
+
+  width: 100%;
+}
+
+.s26__title {
+  color: #FFFFFF;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 37px;
+  text-align: left;
+}
+
+.s26__title-sub {
+  text-align: right;
+}
+
+.s26__title-pink {
+  color: #FFC1BE;
+  font-family: 'Lora', serif;
+  font-size: 36px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 37px;
+}
+
+.s26__list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.s26__item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  width: 100%;
+}
+
+.s26__check {
+  width: 18px;
+  height: 18px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-top: 1px;
+}
+
+.s26__text {
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.s26__fw-700 {
+  font-weight: 700;
+}
+
+/* Роздільник */
+.s26__divider {
+  width: 100%;
+  height: 1px;
+  background: rgba(255, 193, 190, 0.20);
+  margin-top: 3px;
+}
+
+.s26__summary {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.s26__summary-price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.s26__summary-label {
+  color: #FFFFFF;
+  font-family: 'Lora', serif;
+  font-size: 30px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.s26__summary-value {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+}
+
+.s26__val-num {
+  color: #FFC1BE;
+  font-family: 'Lora', serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.s26__val-sub {
+  color: #FFFFFF;
+  font-family: 'Lora', serif;
+  font-size: 18.95px;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.s26__compare {
+  width: 100%;
+  display: flex;
+  gap: 8px;
+}
+
+.s26__compare-box {
+  flex: 1;
+  padding: 8px;
+  background: radial-gradient(ellipse 50.00% 50.00% at 50.00% 50.00%, rgba(81.40, 81.40, 81.40, 0.49) 0%, rgba(58, 58, 59, 0.33) 100%);
+  border-radius: 12px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.s26__compare-box:nth-child(1){
+  padding-left: 35px;
+  max-width: 170px;
+}
+
+.s26__compare-pink {
+  color: #FFC1BE;
+  font-weight: 500;
+  margin-top: 4px;
+}
+
+.s26__cancel {
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 0.7;
+  text-align: center;
+}
+
+
+
+
+
+
+/* =========================================
+   Component: S29 (Final CTA Block)
+   ========================================= */
+
+.s29 {
+  width: 428px;
+  height: 626px;
+  background-image: url(../images-3/img33.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 40px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* --- Заголовок --- */
+.s29__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+  padding: 0 24px;
+  text-align: center;
+  margin-bottom: 24px;
+}
+
+.s29__title {
+  margin: 0;
+  font-family: 'Lora', serif;
+}
+
+.s29__title-dark {
+  color: #151515;
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+/* Розмір для першого рядка (у макеті він 20px) */
+.s29__title-dark:first-child {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.s29__title-green {
+  color: #40692E;
+  font-size: 38px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 40px;
+}
+
+.s29__subtitle {
+  width: 381px;
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.4;
+}
+
+.s29__fw-600 { font-weight: 600; }
+.s29__fw-700 { font-weight: 700; }
+.s29__fw-700-green { 
+  color: #40692E;
+  font-weight: 700; 
+}
+
+/* --- Герой блок (Зображення + кнопка) --- */
+.s29__hero {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.s29__bg-img {
+  width: 100%;
+  position: absolute;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  /* Піднімаємо зображення вище, щоб воно гармонійно вписалося */
+  margin-top: -10px; 
+}
+
+/* Панель з кнопкою */
+.s29__action-box {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  padding: 0 24px 40px 24px;
+  box-sizing: border-box;
+  /* Використовуємо негативний марджін, щоб наїхати на картинку (як в макеті) */
+  margin-top: -15px; 
+  position: relative;
+  z-index: 2;
+}
+
+/* Стилізація конкретно цієї кнопки на основі базового класу */
+.s29__btn {
+  width: 100%;
+
+  outline-offset: -1px;
+}
+
+.s29__btn-text {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 23px; /* Трохи менший шрифт, бо текст довгий */
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+/* Блок гарантії */
+.s29__guarantee {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.s29__guarantee-icon {
+  width: 14px;
+  height: auto;
+  display: block;
+}
+
+.s29__guarantee-text {
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+}
+
+
+
+/* --- Анімація пульсування --- */
+@keyframes pulse-btn {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.02); /* Легке збільшення на 3% */
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Онови свій існуючий клас .s16__btn, додавши дві останні властивості */
+.s16__btn {
+  /* ... твої попередні стилі для кнопки ... */
+  
+  /* Додаємо нескінченну анімацію */
+  animation: pulse-btn 2s infinite ease-in-out;
+  /* Оптимізація для браузера, щоб анімація була максимально плавною */
+  will-change: transform; 
+}
+
+
+.faq-section {
+    width: 440px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    overflow: hidden;
+  }
+
+
+  /* Заголовок FAQ */
+  .s7 .mainTitle {
+    color: #000;
+    font-size: 32px;
+    padding-left: 24px;
+    font-weight: 600;
+        font-family: 'Lora', serif;
+        text-align: center;
+    text-transform: uppercase;
+    line-height: 48px;
+    letter-spacing: 0.96px;
+
+    margin: 0 0 20px 0;
+  }
+
+  .s7__container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+  }
+
+  /* Елемент FAQ */
+  .s7__item {
+    display: flex;
+    flex-direction: column; /* Нормальний порядок: Питання зверху, Відповідь знизу */
+    width: 100%;
+  }
+
+  /* Рядок питання */
+  .s7__question {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    width: 100%;
+    cursor: pointer;
+    user-select: none;
+    padding: 10px 24px;
+  }
+
+  .s7__q-icon {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+
+  .s7__q-icon img {
+    width: 40px;
+    height: 40px;
+    object-fit: contain;
+  }
+
+  .s7__q-text {
+    color: #000;
+    font-size: 16px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    flex: 1;
+  }
+
+  .s7__arrow {
+    width: 22px;
+    height: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.5;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    flex-shrink: 0;
+    transform: rotate(180deg);
+  }
+
+  .s7__arrow img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  /* Поворот стрілочки при відкритті */
+  .s7__item.active .s7__arrow {
+    transform: rotate(0deg);
+    opacity: 1;
+  }
+
+  /* Блок відповіді (висувається знизу) */
+  .s7__answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .s7__answer-inner {
+    display: flex;
+    align-items: flex-end;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 17px;
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .s7__answer-bubble {
+    background: #E6E6E6;
+    border-radius: 24px;
+    padding: 14px 18px;
+    color: #000;
+    font-size: 15px;
+    font-family: 'Source Sans 3', sans-serif;
+    font-weight: 400;
+    box-shadow: 0 4px 19px 0 rgba(0, 0, 0, 0.1);
+    line-height: 20px;
+    flex: 1;
+    box-sizing: border-box;
+    position: relative;
+  }
+
+  .s7__answer-bubble::after{
+    content: "";
+    display: block;
+    width: 37px;
+    height: 26px;
+    position: absolute;
+    right: -8px;
+    bottom: 0;
+    background-image: url(../images-3/vector.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .s7__avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+
+
+.contacts {
+    padding: 48px 24px 240px 24px;
+    background: linear-gradient(180deg, #362724 0%, #251e1c 100%);
+    background-size: 100% 100%;
+
+  position: relative;
+  z-index: 9;
+    box-sizing: border-box;
+}
+
+.contacts__title {
+    text-align: left; color: #fff; font-size: 32px;         font-family: 'Lora', serif; font-weight: 500; text-transform: uppercase; line-height: 48px; word-wrap: break-word;
+    padding-bottom: 20px;
+}
+
+.contacts__grid {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 25px;
+}
+
+.contacts__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 118px;
+    height: 120px;
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.1), inset 0 -2px 4px 0 rgba(255, 255, 255, 0.25);
+background: linear-gradient(180deg, rgba(255, 255, 255, 0.08) 0%, rgba(255, 255, 255, 0.08) 100%);
+    border-radius: 30px;
+    text-decoration: none;
+    box-sizing: border-box;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-top: 1px solid rgba(255, 255, 255, 0.25);
+
+}
+
+.contacts__icon {
+    width: 37%;
+    object-fit: contain;
+    margin-bottom: 12px;
+}
+
+.contacts__icon--email {
+    width: 48px;
+}
+
+.contacts__label {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+   
+    letter-spacing: 0.2px;
+}
+
+.contacts__policy {
+    display: inline-block;
+    color: #918D8C;
+    font-size: 14px;
+
+    font-weight: 400;
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.contacts__copyright {
+    color: #918D8C;
+    font-size: 14px;
+   
+    font-weight: 400;
+    line-height: 1.4;
+    margin: 0 0 36px 0;
+}
+
+.contacts__payments {
+    display: block;
+    width: 100%;
+    max-width: 90%;
+    height: auto;
+    object-fit: contain;
+    margin-left: -2px;
+}
+/* =========================================
+   Fixed Footer (Sticky CTA & Timer)
+   ========================================= */
+
+.footer-bg {
+  position: fixed;
+  z-index: 99;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  opacity: 0;
+  transform: translateY(150px);
+  transition: all .5s ease;
+  pointer-events: none; /* Щоб не перекривати кліки, коли неактивний */
+}
+
+.footer-bg.active {
+  transform: translateY(0px);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.footer {
+  border-radius: 32px 32px 0 0;
+  background: rgba(255, 255, 255, 0.70);
+  box-shadow: 0px -5px 18px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  padding: 24px 24px 60px 24px;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 440px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-sizing: border-box;
+}
+
+.footer * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* --- Верхній рядок з заголовком та таймером --- */
+.footer-top-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footer-title {
+  color: #000000;
+  text-align: center;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+/* --- Таймер --- */
+.footer-timer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.timer-box {
+  display: flex;
+  padding: 10px 8px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 14px;
+  background: linear-gradient(180deg, rgba(27, 27, 27, 0.55) 0%, rgba(62, 62, 62, 0.55) 100%);
+  color: #FFFFFF;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: center;
+}
+
+/* Замість двокрапки : малюємо прямокутник */
+.timer-divider {
+  width: 2.63px;
+  height: 8.23px;
+  background: #968A8F;
+}
+
+/* --- Група під таймером --- */
+.footer-bottom-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+/* --- Кнопка заклик до дії --- */
+.footer-cta-button {
+  display: flex;
+  width: 100%;
+  height: 57px;
+  padding: 10px 28px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 12px;
+  background: url(../images-3/kke.webp);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  border: none;
+  outline-offset: -1px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-text-inner {
+  flex: 1;
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.btn-decor-line {
+  width: 14.5px;
+  height: 11px;
+  outline-offset: -0.75px;
+  display: block;
+}
+
+.footer-cta-button:active {
+  transform: scale(0.98);
+  opacity: 0.9;
+}
+
+/* --- Підзаголовок під кнопкою --- */
+.footer-subtitle {
+  text-align: center;
+  color: #151515;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+/* --- Анімація прольоту бліку (залишена з минулого коду) --- */
+.footer-cta-button::after {
+  content: '';
+  position: absolute;
+  top: -100%;
+  left: -100%;
+  width: 30%;
+  min-height: 500%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.4) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(25deg);
+  animation: ctaShine 3s infinite ease-in-out;
+  pointer-events: none;
+}
+
+@keyframes ctaShine {
+  0% { left: -100%; }
+  35% { left: 150%; }
+  100% { left: 150%; }
+}
+
+
+@media (max-width: 440px) {
+  /* =========================================
+     Component: S16
+     ========================================= */
+  .s16 { width: 97.272vw; height: 182.954vw; }
+  .s16__top-banner { top: 6.818vw; height: 6.818vw; gap: 2.272vw; }
+  .s16__banner-text { font-size: 3.181vw; }
+  .s16__star { width: 2.272vw; height: 2.272vw; }
+  .s16__content { top: 45.454vw; left: 5vw; width: 60.681vw; }
+  .s16__intro { margin-bottom: 4.545vw; }
+  .s16__intro-norm, .s16__intro-green { font-size: 4.545vw; line-height: 5.454vw; }
+  .s16__features { gap: 2.727vw; }
+  .s16__feature { border-radius: 2.727vw; padding: 0.909vw; gap: 1.818vw; box-shadow: 0vw 0.454vw 1.818vw rgba(0, 0, 0, 0.04); }
+  .s16__icon-box { width: 7.272vw; height: 7.272vw; border-radius: 1.363vw; }
+  .s16__feature-text { font-size: 3.636vw; line-height: 4.09vw; padding-right: 2.727vw; }
+  .s16__disclaimer { font-size: 3.181vw; line-height: 4.09vw; margin-top: 1.363vw; max-width: 35.227vw; }
+  .s16__hero { top: 53.409vw; right: 0vw; width: 80.681vw; }
+  .s16__bottom-card { height: 43.636vw; box-shadow: 0vw -0.227vw 2.272vw rgba(0, 0, 0, 0.10); border-radius: 10.227vw 10.227vw 0 0; padding: 5vw 10vw 0 10vw; }
+  .s16__btn { width: 86.363vw; height: 12.954vw; border-radius: 2.727vw; padding: 0 6.363vw; }
+  .s16__btn-spacer, .s16__btn-arrow { width: 4.09vw; }
+  .s16__btn-text { font-size: 5.909vw; }
+  .s16__guarantee { gap: 1.818vw; margin-top: 2.727vw; }
+  .s16__guarantee-icon, .s16__scroll-icon { width: 3.181vw; }
+  .s16__guarantee-text, .s16__scroll-text { font-size: 3.181vw; }
+  .s16__scroll { gap: 0.909vw; margin-top: 5.454vw; }
+
+  /* =========================================
+     Component: S17
+     ========================================= */
+  .s17 { width: 97.272vw; padding: 10.227vw 5.454vw; gap: 3.181vw; }
+  .s17__top-grid { gap: 1.818vw; }
+  .s17__top-item { border-radius: 2.727vw; padding: 3.181vw 0.909vw; gap: 1.818vw; box-shadow: 0vw 0.454vw 1.818vw rgba(0, 0, 0, 0.10); }
+  .s17__top-icon { width: 5.681vw; height: 5.681vw; }
+  .s17__top-text { font-size: 3.181vw; line-height: 4.09vw; }
+  .s17__card { box-shadow: 0vw 0.454vw 1.818vw rgba(0, 0, 0, 0.10); border-radius: 5.454vw; padding: 5.454vw 3.181vw; gap: 5.454vw; }
+  .s17__card-header { gap: 1.818vw; }
+  .s17__badge { padding: 0.227vw 2.5vw; border-radius: 22.727vw; border: 0.227vw solid #C7827E; font-size: 3.636vw; line-height: 4.09vw; }
+  .s17__price-wrap { width: 46.136vw; height: 17.954vw; }
+  .s17__price-val { font-size: 15.813vw; line-height: 17.79vw; }
+  .s17__price-sub { left: 28.636vw; top: 10.681vw; font-size: 4.306vw; line-height: 4.845vw; }
+  .s17__price-desc { font-size: 3.636vw; line-height: 4.09vw; }
+  .s17__subtitle { font-size: 4.09vw; line-height: 4.09vw; }
+  .s17__features { gap: 4.09vw; }
+  .s17__feature { gap: 4.09vw; }
+  .s17__f-icon-box { width: 7.954vw; height: 7.954vw; border-radius: 1.363vw; }
+  .s17__f-text { font-size: 3.636vw; line-height: 4.09vw; }
+  .s17__guarantee { font-size: 3.181vw; gap: 1.59vw; }
+  .s17__guarantee-icon { width: 2.954vw; }
+
+  /* =========================================
+     Component: S18
+     ========================================= */
+  .s18 { width: 97.272vw; gap: 5.454vw; padding: 10.227vw 5.454vw; }
+  .s18__header { gap: 1.818vw; }
+  .s18__badge { padding: 0.227vw 2.5vw; border-radius: 22.727vw; outline: 0.227vw solid #C7827E; outline-offset: -0.227vw; font-size: 3.636vw; line-height: 4.09vw; }
+  .s18__title { width: 87.045vw; font-size: 8.636vw; line-height: 10vw; }
+  .s18__desc { width: 87.045vw; font-size: 3.636vw; }
+  .s18__cards { width: 86.363vw; height: 129.318vw; border-radius: 2.727vw; }
+  .s18__card-right { left: 39.318vw; top: 6.136vw; width: 47.045vw; height: 119.318vw; border-top-right-radius: 2.727vw; border-bottom-right-radius: 2.727vw; padding: 6.363vw 1.818vw 6.363vw 7.272vw; gap: 7.272vw; }
+  .s18__badge-right { padding: 0.909vw 1.818vw; border-radius: 227.272vw; font-size: 3.636vw; }
+  .s18__item-right, .s18__item-left { gap: 3.181vw; }
+  .s18__icon-right { width: 2.727vw; height: 2.727vw; margin-top: 0.454vw; }
+  .s18__text-right, .s18__text-left { font-size: 3.181vw; }
+  .s18__card-left { width: 43.636vw; height: 129.318vw; border-radius: 2.727vw; padding: 3.181vw 1.818vw; }
+  .s18__badge-left { padding: 0.909vw 1.818vw; border-radius: 227.272vw; font-size: 3.636vw; }
+  .s18__icon-left { width: 3.522vw; height: 2.795vw; margin-top: 0.909vw; }
+
+  /* =========================================
+     Component: S19
+     ========================================= */
+  .s19 { width: 97.272vw; gap: 3.636vw; padding: 10.227vw 5.454vw; }
+  .s19__header { gap: 1.818vw; }
+  .s19__badge { padding: 0.227vw 2.5vw; border-radius: 22.727vw; border: 0.227vw solid #C7827E; font-size: 3.636vw; line-height: 4.09vw; }
+  .s19__title { width: 87.045vw; font-size: 8.636vw; line-height: 8.409vw; }
+  .s19__desc { width: 87.045vw; font-size: 3.636vw; }
+  .s19__workout { height: 50.681vw; border-radius: 5.454vw; }
+  .s19__workout-bar { height: 7.954vw; padding: 0 5.454vw; }
+  .s19__workout-name, .s19__workout-time { font-size: 3.636vw; gap: 0.909vw; }
+  .s19__time-icon { width: 2.954vw; height: 2.954vw; }
+  .s19__rest { padding: 1.818vw; border-radius: 2.727vw; gap: 1.818vw; }
+  .s19__rest-icon { width: 9.318vw; height: 7.954vw; border-radius: 1.363vw; }
+  .s19__rest-text { font-size: 3.636vw; }
+  .s19__choice { padding: 1.818vw; border-radius: 2.727vw; }
+  .s19__choice-title { font-size: 4.09vw; line-height: 4.772vw; }
+  .s19__choice-text { font-size: 3.636vw; line-height: 4.772vw; }
+
+  /* =========================================
+     Component: S20
+     ========================================= */
+  .s20 { width: 97.272vw; gap: 5.454vw; padding: 10.227vw 5.454vw; }
+  .s20__badge { padding: 0.227vw 2.5vw; border-radius: 22.727vw; border: 0.227vw solid #C7827E; font-size: 3.636vw; line-height: 4.09vw; }
+  .s20__title-dark, .s20__title-green { font-size: 6.363vw; line-height: 7.045vw; }
+  .s20__graphic { max-width: 86.363vw; }
+  .s20__pill-text { bottom: 1.818vw; right: 11.363vw; font-size: 5vw; line-height: 6.363vw; }
+  .s20__desc { font-size: 3.636vw; }
+  .s20__footer { width: 97.272vw; margin-left: -5.454vw; margin-right: -5.454vw; margin-bottom: -10.227vw; padding: 1.818vw 5.454vw; gap: 2.727vw; }
+  .s20__footer-icon { width: 4.545vw; height: 4.545vw; }
+  .s20__footer-text { font-size: 3.636vw; line-height: 4.09vw; }
+
+  /* =========================================
+     Component: S21
+     ========================================= */
+  .s21 { width: 97.272vw; gap: 5.454vw; padding: 10.227vw 5.454vw; }
+  .s21__header { gap: 1.818vw; }
+  .s21__badge { padding: 0.227vw 2.5vw; border-radius: 22.727vw; outline: 0.227vw solid #C7827E; outline-offset: -0.227vw; font-size: 3.636vw; line-height: 4.09vw; }
+  .s21__title { font-size: 6.818vw; line-height: 8.409vw; }
+  .s21__hero { height: 79.545vw; gap: 3.636vw; }
+  .s21__decor { width: 46.897vw; height: 24.063vw; left: 75.852vw; box-shadow: 0vw 0vw 1.854vw white, 0vw 0vw 0.752vw white; }
+  .s21__decor--1 { top: 74.254vw; outline: 0.502vw solid #F44675; outline-offset: -0.25vw; }
+  .s21__decor--2 { top: 74.252vw; outline: 0.729vw solid #EBBAB7; outline-offset: -0.365vw; }
+  .s21__hero-left { height: 81.954vw; }
+  .s21__phone-img { border-radius: 5.454vw; }
+  .s21__hero-right { max-width: 45.681vw; }
+  .s21__hr-banner { padding: 1.818vw 2.727vw; border-radius: 2.727vw; font-size: 3.636vw; line-height: 4.09vw; }
+  .s21__hr-item { gap: 1.818vw; }
+  .s21__hr-icon-box { width: 7.954vw; height: 7.954vw; border-radius: 1.363vw; }
+  .s21__hr-icon-inner { width: 4.545vw; height: 4.545vw; }
+  .s21__hr-text, .s21__hr-action { font-size: 3.636vw; line-height: 4.09vw; }
+  .s21__hr-action { margin-top: 12.5vw; }
+  .s21__hr-desc { margin-top: 2.727vw; font-size: 3.181vw; line-height: 4.09vw; padding-left: 2.954vw; }
+  .s21__cards { gap: 1.818vw; }
+  .s21__card { height: 23.181vw; border-radius: 2.727vw; gap: 2.727vw; }
+  .s21__card--1, .s21__card--3 { padding-right: 2.727vw; }
+  .s21__card--2, .s21__card--4 { padding-left: 2.727vw; }
+  .s21__card-img-box { width: 27.727vw; border-radius: 2.727vw; }
+  .s21__card-content { gap: 0.909vw; }
+  .s21__card-content--py { padding-top: 1.818vw; padding-bottom: 1.818vw; }
+  .s21__card-title, .s21__card-desc, .s21__img-2 { font-size: 3.636vw; line-height: 4.09vw; }
+  .s21__img-1, .s21__img-3 { width: 27.727vw; height: 23.181vw; }
+  .s21__img-3 { border-radius: 2.727vw; }
+  .s21__img-4 { width: 37.5vw; height: 25.227vw; left: -8.409vw; top: -0.227vw; }
+  .s21__badge-live { left: 21.136vw; top: 1.363vw; border-radius: 8.795vw; gap: 0.352vw; padding: 0 0.704vw; }
+  .s21__badge-dot { width: 0.968vw; height: 0.968vw; border: 0.045vw solid #FFFFFF; }
+  .s21__badge-text { font-size: 1.231vw; }
+
+  /* =========================================
+     Component: S22
+     ========================================= */
+  .s22 { width: 97.272vw; height: 243.636vw; }
+  .s22__bg-hero { width: 92.727vw; height: 90vw; right: 0vw; top: -12.727vw; }
+  .s22__header { left: 5.454vw; top: 10.227vw; gap: 1.818vw; }
+  .s22__title { width: 40.454vw; font-size: 8.636vw; line-height: 8.863vw; }
+  .s22__subtitle { width: 53.636vw; font-size: 3.636vw; }
+  .s22__cards { left: 5.454vw; top: 57.954vw; width: 86.363vw; gap: 1.818vw; }
+  .s22__card { width: 86.363vw; padding: 3.181vw; box-shadow: 0vw 0.454vw 1.818vw rgba(0, 0, 0, 0.10); border-radius: 5.454vw; outline: 0.227vw solid #FFFFFF; outline-offset: -0.227vw; gap: 3.181vw; }
+  .s22__badge { height: 7.954vw; padding: 0 2.5vw; border-radius: 17.045vw; font-size: 3.181vw; }
+  .s22__img-box { width: 80vw; height: 40.681vw; border-radius: 2.727vw; }
+  .s22__overlay-title { bottom: 2.727vw; font-size: 5.227vw; text-shadow: 0vw 0vw 4.545vw rgba(0, 0, 0, 1.00); }
+  .s22__list { gap: 1.818vw; }
+  .s22__list-header, .s22__list-text, .s22__footer-text { font-size: 3.636vw; line-height: 4.09vw; }
+  .s22__list-item { gap: 1.59vw; }
+  .s22__check-icon { width: 3.636vw; height: 3.636vw; }
+
+  /* =========================================
+     Component: S23
+     ========================================= */
+  .s23 { width: 97.272vw; gap: 3.636vw; padding: 10.227vw 5.454vw; }
+  .s23__header { gap: 1.818vw; }
+  .s23__badge { padding: 0.227vw 2.5vw; border-radius: 22.727vw; outline: 0.227vw solid #C7827E; outline-offset: -0.227vw; font-size: 3.636vw; line-height: 4.09vw; }
+  .s23__title { width: 87.045vw; font-size: 8.636vw; line-height: 10vw; }
+  .s23__desc { width: 87.045vw; }
+  .s23__desc-norm, .s23__desc-bold { font-size: 3.636vw; }
+  .s23__gallery { height: 76.363vw; }
+  .s23__gallery-bg { height: 75.454vw; top: 0.909vw; }
+  .s23__card-back { width: 48.334vw; height: 66.311vw; border-radius: 5.454vw; border: 0.227vw solid #FFFFFF; }
+  .s23__card-back--right { left: 54.572vw; top: 6.563vw; }
+  .s23__card-back--left { left: -5.834vw; top: 0.252vw; }
+  .s23__card-solid { width: 60.454vw; height: 64.772vw; left: 18.409vw; top: 10.681vw; border-radius: 5.454vw; outline: 0.454vw solid #FFFFFF; outline-offset: -0.454vw; }
+  .s23__gallery-img { top: 22.727vw; }
+  .s23__info-section { gap: 0.909vw; }
+  .s23__stats-banner { padding: 2.272vw 3.181vw; border-radius: 2.727vw; }
+  .s23__stat-icon { width: 8.409vw; height: 8.409vw; border: 0.227vw solid rgba(255, 255, 255, 0.26); }
+  .s23__stat-icon-inner { width: 4.772vw; height: 3.863vw; border-radius: 0.454vw; }
+  .s23__stat-val { font-size: 7.263vw; line-height: 8.434vw; }
+  .s23__stat-val-small { font-size: 5.811vw; }
+  .s23__stat-lbl { font-size: 3.636vw; }
+  .s23__stat-divider { width: 8.409vw; height: 8.409vw; border: 0.227vw solid rgba(255, 255, 255, 0.26); }
+  .s23__live-banner { padding-top: 1.818vw; padding-left: 2.727vw; border-radius: 2.727vw; }
+  .s23__live-text-side { width: 46.818vw; padding-bottom: 3.636vw; gap: 1.818vw; }
+  .s23__live-badge { padding: 0.454vw 1.531vw; border-radius: 19.138vw; gap: 0.765vw; font-size: 2.679vw; }
+  .s23__live-dot { width: 2.104vw; height: 2.104vw; }
+  .s23__lt-white, .s23__lt-pink { font-size: 5.227vw; line-height: 5.909vw; }
+  .s23__ld-norm, .s23__ld-bold { font-size: 3.636vw; line-height: 4.09vw; }
+  .s23__live-img-side { width: 31.136vw; height: 39.318vw; }
+
+  /* =========================================
+     Component: S24
+     ========================================= */
+  .s24 { width: 97.272vw; padding: 10.227vw 0; }
+  .s24__header { padding: 0 5.454vw; margin-bottom: 7.272vw; }
+  .s24__title-dark, .s24__title-green { font-size: 8.636vw; line-height: 8.409vw; }
+  .s24__swiper { height: 106.818vw; }
+  .s24__slide { width: 64.545vw; height: 106.818vw; border-radius: 5.454vw; }
+  .s24__nav { gap: 5.454vw; margin-top: 7.272vw; padding: 0 5.454vw; }
+  .s24__btn { height: 9.545vw; padding: 0 11.363vw; border-radius: 2.727vw; box-shadow: 0 0 0 0.909vw rgba(64, 105, 46, 0.50); }
+  .s24__arrow { width: 5.454vw; }
+
+  /* =========================================
+     Component: S25
+     ========================================= */
+  .s25 { width: 97.272vw; gap: 5.454vw; padding: 10.227vw 5.454vw; }
+  .s25__header { gap: 1.818vw; }
+  .s25__badge { padding: 0.227vw 2.5vw; border-radius: 22.727vw; border: 0.227vw solid #C7827E; font-size: 3.636vw; line-height: 4.09vw; }
+  .s25__title { font-size: 8.636vw; line-height: 10vw; }
+  .s25__subtitle { font-size: 3.636vw; }
+  .s25__timer { width: 86.363vw; height: 21.363vw; border-radius: 2.727vw; padding: 3.409vw 3.181vw; gap: 5.681vw; }
+  .s25__timer-bow { width: 25vw; height: 16.59vw; left: -5.681vw; top: -4.956vw; }
+  .s25__timer-bow-shadow { width: 25vw; height: 16.59vw; left: -5.634vw; top: -4.404vw; filter: blur(0.488vw); }
+  .s25__timer-col { width: 13.636vw; gap: 0.909vw; }
+  .s25__timer-lbl { font-size: 3.181vw; }
+  .s25__timer-spacer { height: 7.5vw; width: 2.272vw; font-size: 7.727vw; margin-top: -1.363vw; }
+  .s25__timer-val { font-size: 9.545vw; }
+  .s25__cards { width: 86.363vw; gap: 3.181vw; }
+  .s25__gift { border-radius: 2.727vw; }
+  .s25__gift--1 { height: 64.318vw; }
+  .s25__g1-phone { width: 40.909vw; height: 68.181vw; left: 45.454vw; top: -3.863vw; }
+  .s25__g1-phone-shadow { width: 37.045vw; height: 60vw; left: 48.636vw; top: 1.136vw; filter: blur(1.84vw); }
+  .s25__g1-content { top: -0.068vw; width: 51.59vw; padding: 3.181vw 1.818vw; gap: 1.818vw; }
+  .s25__g-badge { height: 7.954vw; padding: 0 2.5vw; border-radius: 17.045vw; font-size: 3.181vw; }
+  .s25__g1-title, .s25__g2-title { font-size: 4.545vw; }
+  .s25__g1-list { gap: 1.59vw; }
+  .s25__g1-item { gap: 1.59vw; }
+  .s25__check-icon { width: 3.636vw; height: 3.636vw; margin-top: 0.454vw; }
+  .s25__g1-text { font-size: 3.636vw; line-height: 4.09vw; }
+  .s25__g1-lock { padding: 3.181vw; border-top-right-radius: 5.454vw; border-bottom-left-radius: 5.454vw; backdrop-filter: blur(0.727vw); -webkit-backdrop-filter: blur(0.727vw); gap: 2.727vw; }
+  .s25__g1-lock-icon { width: 9.09vw; height: 9.09vw; }
+  .s25__g1-lock-text { font-size: 3.636vw; line-height: 4.09vw; }
+  .s25__gift--2 { height: 62.954vw; }
+  .s25__g2-vault { left: -7.045vw; top: -8.409vw; width: 56.818vw; }
+  .s25__g2-vault-shadow { left: -4.545vw; top: -2.727vw; width: 56.818vw; filter: blur(0.92vw); }
+  .s25__g2-content { width: 41.363vw; padding: 3.181vw 1.818vw 3.181vw 0; gap: 1.818vw; }
+  .s25__g2-desc { font-size: 3.636vw; }
+  .s25__g2-strip { height: 15.454vw; gap: 7.954vw; }
+  .s25__g2-feature { gap: 1.818vw; }
+  .s25__g2-icon { width: 5.227vw; height: 5.227vw; }
+  .s25__g2-feature-text { font-size: 3.636vw; line-height: 4.09vw; }
+
+  /* =========================================
+     Component: S26
+     ========================================= */
+  .s26 { width: 97.272vw; padding: 10.227vw 5.454vw; }
+  .s26__card { width: 86.363vw; padding: 7.272vw 3.181vw; gap: 5.454vw; }
+  .s26__title { font-size: 6.818vw; line-height: 8.409vw; }
+  .s26__title-pink { font-size: 8.181vw; line-height: 8.409vw; }
+  .s26__list { gap: 3.181vw; }
+  .s26__item { gap: 1.818vw; }
+  .s26__check { width: 4.09vw; height: 4.09vw; margin-top: 0.227vw; }
+  .s26__text { font-size: 3.636vw; }
+  .s26__divider { height: 0.227vw; margin-top: 0.681vw; }
+  .s26__summary { gap: 6.136vw; }
+  .s26__summary-price-row { gap: 3.636vw; }
+  .s26__summary-label { font-size: 6.818vw; }
+  .s26__summary-value { gap: 1.363vw; }
+  .s26__val-num { font-size: 9.09vw; }
+  .s26__val-sub { font-size: 4.306vw; }
+  .s26__compare { gap: 1.818vw; }
+  .s26__compare-box { padding: 1.818vw; border-radius: 2.727vw; font-size: 3.409vw; }
+  .s26__compare-box:nth-child(1) { padding-left: 7.954vw; max-width: 38.636vw; }
+  .s26__compare-pink { margin-top: 0.909vw; }
+  .s26__cancel { font-size: 3.181vw; }
+
+  /* =========================================
+     Component: S29
+     ========================================= */
+  .s29 { width: 97.272vw; height: 142.272vw; padding-top: 9.09vw; }
+  .s29__header { gap: 5.454vw; padding: 0 5.454vw; margin-bottom: 5.454vw; }
+  .s29__title-dark, .s29__title-green { font-size: 8.636vw; line-height: 9.09vw; }
+  .s29__title-dark:first-child { font-size: 4.545vw; line-height: 6.363vw; }
+  .s29__subtitle { width: 86.59vw; font-size: 4.09vw; }
+  .s29__bg-img { margin-top: -2.272vw; }
+  .s29__action-box { gap: 1.818vw; padding: 0 5.454vw 9.09vw 5.454vw; margin-top: -3.409vw; }
+  .s29__btn { outline-offset: -0.227vw; }
+  .s29__btn-text { font-size: 5.227vw; }
+  .s29__guarantee { gap: 1.818vw; margin-top: 1.818vw; }
+  .s29__guarantee-icon { width: 3.181vw; }
+  .s29__guarantee-text { font-size: 3.181vw; }
+
+  /* =========================================
+     FAQ Section (S7)
+     ========================================= */
+  .faq-section { width: 100vw; }
+  .s7 .mainTitle { font-size: 7.272vw; padding-left: 5.454vw; line-height: 10.909vw; letter-spacing: 0.218vw; margin: 0 0 4.545vw 0; }
+  .s7__container { gap: 3.636vw; }
+  .s7__question { gap: 3.181vw; padding: 2.272vw 5.454vw; }
+  .s7__q-icon { width: 7.954vw; height: 7.954vw; }
+  .s7__q-icon img { width: 9.09vw; height: 9.09vw; }
+  .s7__q-text { font-size: 3.636vw; line-height: 4.545vw; }
+  .s7__arrow { width: 5vw; height: 3.181vw; }
+  .s7__answer-inner { gap: 2.272vw; padding-top: 2.272vw; padding-bottom: 3.863vw; padding-left: 5.454vw; padding-right: 5.454vw; }
+  .s7__answer-bubble { border-radius: 5.454vw; padding: 3.181vw 4.09vw; font-size: 3.409vw; box-shadow: 0 0.909vw 4.318vw 0 rgba(0, 0, 0, 0.1); line-height: 4.545vw; }
+  .s7__answer-bubble::after { width: 8.409vw; height: 5.909vw; right: -1.818vw; }
+  .s7__avatar { width: 11.363vw; height: 11.363vw; }
+
+  /* =========================================
+     Contacts Section
+     ========================================= */
+  .contacts { padding: 10.909vw 5.454vw 54.545vw 5.454vw; }
+  .contacts__title { font-size: 7.272vw; line-height: 10.909vw; padding-bottom: 4.545vw; }
+  .contacts__grid { gap: 2.727vw; margin-bottom: 5.681vw; }
+  .contacts__card { width: 26.818vw; height: 27.272vw; box-shadow: inset 0 0.454vw 0.909vw 0 rgba(0, 0, 0, 0.1), inset 0 -0.454vw 0.909vw 0 rgba(255, 255, 255, 0.25); border-radius: 6.818vw; border: 0.227vw solid rgba(255, 255, 255, 0.05); border-top: 0.227vw solid rgba(255, 255, 255, 0.25); }
+  .contacts__icon { margin-bottom: 2.727vw; }
+  .contacts__icon--email { width: 10.909vw; }
+  .contacts__label { font-size: 3.636vw; letter-spacing: 0.045vw; }
+  .contacts__policy, .contacts__copyright { font-size: 3.181vw; }
+  .contacts__policy { margin-bottom: 3.409vw; }
+  .contacts__copyright { margin: 0 0 8.181vw 0; }
+  .contacts__payments { margin-left: -0.454vw; }
+
+  /* =========================================
+     Fixed Footer
+     ========================================= */
+  .footer-bg { transform: translateY(34.09vw); }
+  .footer { border-radius: 7.272vw 7.272vw 0 0; box-shadow: 0vw -1.136vw 4.09vw rgba(0, 0, 0, 0.25); padding: 5.454vw 5.454vw 13.636vw 5.454vw; max-width: 100vw; gap: 5.454vw; }
+  .footer-title { font-size: 4.545vw; line-height: 4.545vw; }
+  .footer-timer { gap: 1.363vw; }
+  .timer-box { padding: 2.272vw 1.818vw; border-radius: 3.181vw; font-size: 4.545vw; line-height: 4.545vw; }
+  .timer-divider { width: 0.597vw; height: 1.87vw; }
+  .footer-bottom-group { gap: 1.818vw; }
+  .footer-cta-button { height: 12.954vw; padding: 2.272vw 6.363vw; border-radius: 2.727vw; outline-offset: -0.227vw; }
+  .btn-text-inner { font-size: 5.909vw; }
+  .btn-decor-line { width: 3.295vw; height: 2.5vw; outline-offset: -0.17vw; }
+  .footer-subtitle { font-size: 3.181vw; }
+}
