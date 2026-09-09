@@ -2634,6 +2634,14 @@ z-index: 1;
   width: 100%;
 
   outline-offset: -1px;
+  padding: 0 !important;
+  text-align: center !important;
+  justify-content: center !important;
+  align-items: center !important;
+}
+
+.s29__btn .s16__btn-spacer{
+  display: none;
 }
 
 .s29__btn-text {
@@ -2642,6 +2650,7 @@ z-index: 1;
   font-size: 23px; /* Трохи менший шрифт, бо текст довгий */
   font-weight: 700;
   text-transform: uppercase;
+  white-space: nowrap;
   text-align: center;
 }
 
