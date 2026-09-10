@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
 
   /* =========================================
-     1. Таймер (Логіка 24 годин) - БЕЗ ЗМІН
+     1. Таймер (Логіка 24 годин)
      ========================================= */
   function start24hTimer(containerSelector, itemSelector, storageKey) {
     const container = document.querySelector(containerSelector);
@@ -45,7 +45,6 @@ document.addEventListener("DOMContentLoaded", () => {
     setInterval(updateTimer, 1000);
   }
 
-  // Виклик 24-годинного таймера для попапу
   start24hTimer(".popup-timer-row", ".popup-t-box", "popupTimerStartTime");
 
 
@@ -77,15 +76,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
   /* =========================================
-     3. Збір даних, валідація та відправка в TG
+     3. Збір даних, валідація та відправка
      ========================================= */
   const tgForm = document.getElementById('tg-form');
   const errorMsg = document.getElementById('popup-error');
-  
-  // Регулярний вираз для перевірки email
   const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-  // Функція для безпечного виводу HTML у Telegram
   function escapeHtml(text) {
     if (!text) return 'not set';
     return text.replace(/&/g, "&amp;")
@@ -93,7 +89,6 @@ document.addEventListener("DOMContentLoaded", () => {
                .replace(/>/g, "&gt;");
   }
 
-  // Збір UTM-міток
   function getUTMParams() {
     const params = new URLSearchParams(window.location.search);
     return {
@@ -109,14 +104,12 @@ document.addEventListener("DOMContentLoaded", () => {
     tgForm.addEventListener('submit', async function (e) {
       e.preventDefault();
       
-      // Скидаємо повідомлення про помилку
       errorMsg.classList.remove('show');
       errorMsg.textContent = '';
 
       const name = document.getElementById('user_name').value.trim();
       const email = document.getElementById('user_email').value.trim();
 
-      // Валідація
       if (!name || !email) {
         errorMsg.textContent = 'Please fill in all fields.';
         errorMsg.classList.add('show');
@@ -129,20 +122,26 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      // Перевіряємо чи підключено data.js
-      if (typeof TG_CONFIG === 'undefined' || !TG_CONFIG.BOT_TOKEN || !TG_CONFIG.CHAT_ID) {
+      if (typeof TG_CONFIG === 'undefined' || !TG_CONFIG.BOT_TOKEN) {
         errorMsg.textContent = 'Configuration error. Please contact support.';
         errorMsg.classList.add('show');
-        console.error("TG_CONFIG is missing. Make sure data.js is loaded.");
         return;
       }
+
+      // Приведення USER_ID або CHAT_ID до масиву
+      let rawTargets = TG_CONFIG.USER_ID || TG_CONFIG.CHAT_ID;
+      if (!rawTargets) {
+        errorMsg.textContent = 'Configuration error. Target ID missing.';
+        errorMsg.classList.add('show');
+        return;
+      }
+      const targets = Array.isArray(rawTargets) ? rawTargets : [rawTargets];
 
       const submitBtn = tgForm.querySelector('button[type="submit"]');
       const originalBtnText = submitBtn.textContent;
       submitBtn.textContent = 'SENDING...';
       submitBtn.disabled = true;
 
-      // Збираємо додаткові дані
       const utm = getUTMParams();
       const domain = window.location.hostname || 'Unknown';
       const currentUrl = window.location.href;
@@ -150,7 +149,6 @@ document.addEventListener("DOMContentLoaded", () => {
       const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone || 'Unknown';
       const resolution = `${window.screen.width}x${window.screen.height}`;
 
-      // Формуємо красиве повідомлення у HTML форматі
       const textMessage = `
 🎉 <b>New Lead (Mobility Club)!</b>
 
@@ -173,38 +171,35 @@ document.addEventListener("DOMContentLoaded", () => {
 • Resolution: ${escapeHtml(resolution)}
 `;
 
-      // API URL (з parse_mode=HTML)
-      const url = `https://api.telegram.org/bot${TG_CONFIG.BOT_TOKEN}/sendMessage`;
-      
-      const payload = {
-        chat_id: TG_CONFIG.CHAT_ID,
-        text: textMessage,
-        parse_mode: 'HTML',
-        disable_web_page_preview: true
-      };
+      const apiUrl = `https://api.telegram.org/bot${TG_CONFIG.BOT_TOKEN}/sendMessage`;
 
       try {
-        const response = await fetch(url, {
-          method: 'POST',
-          headers: {
-            'Content-Type': 'application/json'
-          },
-          body: JSON.stringify(payload)
-        });
+        const sendRequests = targets.map(id => 
+          fetch(apiUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+              chat_id: id,
+              text: textMessage,
+              parse_mode: 'HTML',
+              disable_web_page_preview: true
+            })
+          })
+        );
 
-        if (response.ok) {
-          // Успіх -> редирект
+        const responses = await Promise.all(sendRequests);
+        const hasSuccess = responses.some(res => res.ok);
+
+        if (hasSuccess) {
           window.location.href = 'https://zubalenok.online/shop/item/13230';
         } else {
-          // Помилка сервера Telegram
-          errorMsg.textContent = 'Something went wrong. Please try again later.';
+          errorMsg.textContent = 'Something went wrong. Make sure you pressed /start in Telegram.';
           errorMsg.classList.add('show');
           submitBtn.textContent = originalBtnText;
           submitBtn.disabled = false;
         }
       } catch (error) {
         console.error('Telegram Error:', error);
-        // Технічна помилка (немає інтернету, блокування запиту)
         errorMsg.textContent = 'Connection error. Please check your internet and try again.';
         errorMsg.classList.add('show');
         submitBtn.textContent = originalBtnText;
