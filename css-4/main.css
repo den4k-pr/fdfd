@@ -254,7 +254,8 @@
   width: 428px;
   margin: 0 auto;
   padding: 45px 24px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #FEF9F3 100%);
+  background: linear-gradient(180deg, #FFF 0%, #FEF9F3 93.27%, #FFF 100%);
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -671,7 +672,6 @@
 
 .s19 {
   width: 428px;
-  background: linear-gradient(180deg, #FFFFFF 0%, #FEF9F3 100%);
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -1298,12 +1298,42 @@ color: #323232;
 /* =========================================
    Component: S22 (It's a club, not a program)
    ========================================= */
+.s22__list-l{
+  position: relative;
+  z-index: 3;
+}
+
+.s22__list-l::after{
+  display: block;
+  content: "";
+  width: 1px;
+  z-index: -1;
+  height: 90%;
+  position: absolute;
+  left: 7px;
+  top: 4px;
+  background-color: #C7827E;
+}
+
+@media (max-width: 440px) {
+  .s22__list-l::after {
+    display: block;
+    content: "";
+    width: 0.234vw;
+    z-index: -1;
+    height: 90%;
+    position: absolute;
+    left: 1.636vw;
+    top: 0.935vw;
+    background-color: #C7827E;
+  }
+}
 
 .s22 {
   width: 428px;
   height: 1072px;
   position: relative;
-  background: linear-gradient(180deg, #F4E6DB 0%, #FFFFFF 100%);
+  background: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 6.04%), linear-gradient(180deg, rgba(255, 255, 255, 0.00) 57.2%, #FFF 100%), radial-gradient(41.28% 45.38% at 77.69% 15.92%, rgba(255, 255, 255, 0.70) 0%, rgba(255, 255, 255, 0.00) 100%), url(<path-to-image>) lightgray 50% / cover no-repeat, linear-gradient(180deg, #F4E6DB 0%, #FFF 100%);
   margin: 0 auto;
   box-sizing: border-box;
   font-family: 'Source Sans 3', sans-serif;
